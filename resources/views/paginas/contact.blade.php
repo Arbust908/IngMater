@@ -2,6 +2,9 @@
 
 @section('content')
 <section>
-    <h2>{{ __('who.title') }}</h2>
+    <h2>{{ __('contact.title') }}</h2>
+
+    <p> @lang('contact.subtitle') </p>
+
 </section>
 @endsection

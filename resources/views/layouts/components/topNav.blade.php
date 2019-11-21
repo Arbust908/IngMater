@@ -6,6 +6,20 @@
     <!-- {{ "routes." . Route::currentRouteName() . "" }} -->
     <!-- {{ __( "routes." . Route::currentRouteName() ) }} -->
 </nav>
+<nav class="flex w-full justify-center">
+    <button
+        class="w-1/4 px-4 py-2 m-2 rounded-full bg-green-600 text-gray-200 shadow-lg hover:bg-main-200 hover:text-white font-serif font-semibold"
+        onclick="event.preventDefault();
+            document.getElementById('lang-change').submit();">
+        <i class="far fa-flag"></i>
+        @lang('lang.lang')
+    </button>
+    <form id="lang-change" action="{{ route('lang') }}" method="POST" class="hidden">
+        {{ csrf_field() }}
+        <input type="hidden" name="languaje" value="@lang('lang.lang')">
+        <input type="hidden" name="page" value="{{ Route::currentRouteName() }}">
+    </form>
+</nav>
 {{--
 @if(Route::has('login'))
 <div class="absolute top-0 right-0 mt-4 mr-4">

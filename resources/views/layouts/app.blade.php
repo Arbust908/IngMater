@@ -16,15 +16,12 @@
 </head>
 <body class="bg-white h-screen antialiased leading-none font-sans">
     <div id="app">
-        @TopNav()
-        @endTopNav
-    <main>
-        @yield('content')
-    </main>
-        @Footer()
-        @endFooter
+        @TopNav()@endTopNav
+        <main>
+            @yield('content')
+        </main>
+        @Footer()@endFooter
     </div>
-
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}"></script>
 </body>

@@ -1,4 +1,5 @@
 <footer class="w-full bg-gris-700">
+    {{App::getLocale()}}
     <!-- {{ Route::currentRouteName() }} -->
     <section>
         <h4>Nuestros Clientes:</h4>

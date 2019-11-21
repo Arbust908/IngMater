@@ -23,5 +23,17 @@
             </div>
         </div>
     </div>
+    <section class="w-full flex flex-col"> {{-- imagen de fondo --}}
+        <h1>@lang('home.title')</h1>
+        <br>
+        <p>@lang('home.subtitle')</p>
+        <br>
+    </section>
+    <section>
+        @foreach( __('home.cards') as $key => $value )
+            {{ $key . '  ' .$value }}
+            <br>
+        @endforeach
+    </section>
 </div>
 @endsection

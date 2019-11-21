@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class HomeController extends Controller
 {
@@ -85,5 +86,22 @@ class HomeController extends Controller
     public function cyc()
     {
         return view('paginas.cyc');
+    }
+
+    /**
+     *
+     */
+    public function lang(Request $request)
+    {
+        $inputs = $request->all();
+        $lang = $inputs["languaje"];
+        $page = $inputs["page"];
+        $langs = ['en','es'];
+        dump( in_array($lang, $langs) );
+        if( in_array($lang, $langs) ){
+            App::setLocale($lang);
+        }
+        // dd($lang, $page, App::getLocale());
+        return redirect()->route($page);
     }
 }

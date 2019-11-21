@@ -27,5 +27,6 @@ class AppServiceProvider extends ServiceProvider
         // Layout
         Blade::component('layouts.components.topNav', 'TopNav');
         Blade::component('layouts.components.footer', 'Footer');
+        Blade::component('layouts.components.card', 'Card');
     }
 }
