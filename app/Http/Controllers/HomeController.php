@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Session;
 
 class HomeController extends Controller
 {
@@ -95,13 +96,16 @@ class HomeController extends Controller
     {
         $inputs = $request->all();
         $lang = $inputs["languaje"];
-        $page = $inputs["page"];
+        //dump( $inputs["page"] );
+        //dump( __('routes.'.$inputs["page"], [], $lang) );
+        $page = __('routes.'.$inputs["page"], [], $lang);
         $langs = ['en','es'];
-        dump( in_array($lang, $langs) );
+        // dump( in_array($lang, $langs) );
         if( in_array($lang, $langs) ){
             App::setLocale($lang);
+            Session::put('locale', $lang);
         }
-        // dd($lang, $page, App::getLocale());
-        return redirect()->route($page);
+        // dd('Idioma '. $lang, 'Pagina '. $page, App::getLocale(), url( '/' . $page ));
+        return redirect( url( '/' . $page ) );
     }
 }

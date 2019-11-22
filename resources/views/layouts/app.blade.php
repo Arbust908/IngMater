@@ -14,7 +14,7 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="bg-white h-screen antialiased leading-none font-sans">
+<body class="bg-white min-h-screen antialiased leading-none font-sans">
     <div id="app">
         @TopNav()@endTopNav
         <main>
