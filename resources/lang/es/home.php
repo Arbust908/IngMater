@@ -1,10 +1,11 @@
 <?php
 
 return [
-    'title' => 'Consultoria en ciencias & inegegsv',
-    'subtitle' => 'brindaoosmkdjn',
+    'title' => 'Consultoría en Ciencia & Ingeniería de materiales',
+    'subtitle' => 'Brindamos servicios personalizados para optimizar la calidad y eficiencia de la industria Argentina y del mundo',
     'cards' => [
-        'iyd' => 'Ingenieria & Desarrollo',
-        'dyd' => 'Ingenieria & Desarrollo',
+        'iyd' => 'Ingeniería y Desarrollo',
+        'inspects' => 'Inspecciones',
+        'cyc' => 'Capacitaciones y Certificaciones'
     ]
 ];
