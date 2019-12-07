@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'home' => '/',
-    'who' => 'quienes-somos',
+    'home' => 'Home',
+    'who' => 'Who are We',
     'portfolio' => 'portfolio',
     'inspects' => 'inspecciones',
     'iyd' => 'ingenieria-y-desarrollo',

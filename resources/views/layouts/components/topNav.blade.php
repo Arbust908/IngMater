@@ -20,6 +20,7 @@
         <input type="hidden" name="page" value="{{ Route::currentRouteName() }}">
     </form>
 </nav>
+@include('layouts.components.mobileNav')
 {{--
 @if(Route::has('login'))
 <div class="absolute top-0 right-0 mt-4 mr-4">

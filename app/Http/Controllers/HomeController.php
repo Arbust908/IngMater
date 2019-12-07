@@ -105,7 +105,8 @@ class HomeController extends Controller
             App::setLocale($lang);
             Session::put('locale', $lang);
         }
-        // dd('Idioma '. $lang, 'Pagina '. $page, App::getLocale(), url( '/' . $page ));
+        //dd('Idioma '. $lang, 'Pagina '. $page, App::getLocale(), url( '/' . $page ));
+        if($page == '/') { return redirect( url( $page ) ); }
         return redirect( url( '/' . $page ) );
     }
 }

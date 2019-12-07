@@ -7,5 +7,6 @@ return [
     'inspects' => 'inspections',
     'iyd' => 'engineering-and-development',
     'contact' => 'contact',
-    'cyc' => 'training-and-certifications'
+    'cyc' => 'training-and-certifications',
+    'lang' => 'lang',
 ];
