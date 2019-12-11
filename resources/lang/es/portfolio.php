@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Portfolio ES',
+    'title' => 'Portfolio',
     'banner' => '/img/portfolio.jpg',
     'boxes' => [
         'client1' => [
@@ -13,7 +13,7 @@ return [
                'img' => ''
             ],
             'work2' => [
-                'title' => 'Trabajo2', 
+                'title' => 'Trabajo2',
                 'text' => 'Somos una empresa integrada por ingenieros con vastos conocimientos técnicos y cientificos en el campo de la ingieneria de los materiales, los cuales nos hemos propuesto utilizar para brindar servicios de consultoria que ayuden a promover el crecimiento del sector industrial',
                 'img' => ''
              ]
