@@ -4,7 +4,7 @@ return [
     'title' => '¿Quienes Somos?',
     'subtitle' => 'Somos una empresa integrada por ingenieros con vastos conocimientos técnicos y cientificos en el campo de la ingeniería de los materiales, los cuales nos hemos propuesto utilizar para brindar servicios de consultoría que ayuden a promover el crecimiento del sector industrial.',
     'subtitle2' => 'Creemos firmemente que a través de una agul y dinámica cooperación con las industrias, estas últimas podrían optimizar la calidad y la eficiencia de las decisiones en tópicos centrales a la ingeniería de materiales.',
-    'banner' => '',
+    'banner' => '/img/who.jpg',
     'map' => [
         'title' => 'Nuestras Sedes',
         'hq' => [

@@ -2,6 +2,7 @@
 
 return [
     'title' => 'Engineering and Development',
+    'banner' => '/img/template.jpg',
     'cajas' => [
         [
             'title' => 'Title',

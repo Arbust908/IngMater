@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Inspecciones',
-    'banner' => '/img/inspections.jpg',
+    'banner' => '/img/template.jpg',
     'cajas' => [
         [
             'title' => 'Título',

@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Ingeniería y Desarrollo',
-    'banner' => '/img/iyd.jpg',
+    'banner' => '/img/template.jpg',
     'cajas' => [
         [
             'title' => 'Título',

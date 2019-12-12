@@ -3,10 +3,10 @@
 return [
     'home' => 'Home',
     'who' => 'Who are We',
-    'portfolio' => 'portfolio',
-    'inspects' => 'inspecciones',
-    'iyd' => 'ingenieria-y-desarrollo',
-    'contact' => 'contacto',
-    'cyc' => 'capacitaciones-y-certificaciones',
+    'portfolio' => 'Portfolio',
+    'inspects' => 'Inspections',
+    'iyd' => 'Engineering-and-Development',
+    'contact' => 'Contact',
+    'cyc' => 'Training-and-certifications',
     'lang' => 'lang',
 ];

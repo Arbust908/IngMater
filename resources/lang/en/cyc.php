@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Training and Certifications',
-    'banner' => '/img/cyc.jpg',
+    'banner' => '/img/template.jpg',
     'cajas' => [
         [
             'title' => 'Title',

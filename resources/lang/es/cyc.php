@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Capacitaciones y Certificaciones',
-    'banner' => '/img/cyc.jpg',
+    'banner' => '/img/template.jpg',
     'cajas' => [
         [
             'title' => 'Título',
