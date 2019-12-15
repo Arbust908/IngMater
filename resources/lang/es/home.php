@@ -5,8 +5,20 @@ return [
     'subtitle' => 'Brindamos servicios personalizados para optimizar la calidad y eficiencia de la industria Argentina y del mundo',
     'banner' => '/img/home.jpg',
     'cards' => [
-        'iyd' => 'Ingeniería y Desarrollo',
-        'inspects' => 'Inspecciones',
-        'cyc' => 'Capacitaciones y Certificaciones'
+        'iyd' => [
+            'title' => 'Ingeniería y Desarrollo',
+            'img' => 'Group100.png',
+            'slug' => 'iyd',
+        ],
+        'inspects' => [
+            'title' => 'Inspecciones',
+            'img' => 'research.png',
+            'slug' => 'inspects',
+        ],
+        'cyc' => [
+            'title' => 'Capacitaciones y Certificaciones',
+            'img' => 'medal.png',
+            'slug' => 'cyc',
+        ],
     ]
 ];

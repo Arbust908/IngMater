@@ -15,7 +15,7 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body class="bg-white  antialiased leading-none font-sans">
-    <div id="app" class="min-h-screen flex flex-col justify-between">
+    <div id="app" class="min-h-screen flex flex-col">
         @TopNav()@endTopNav
         <main>
             @yield('content')

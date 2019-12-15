@@ -35,7 +35,24 @@
  * @import "components/buttons";
  * @import "components/forms";
  */
-
+.rotated-90 {
+    transform: rotate(90deg);
+}
+.rotated {
+    transform: rotate(180deg);
+}
+.transition {
+    transition: 0.6s;
+}
+.transition-slow {
+    transition: 1s;
+}
+.transition-fast {
+    transition: 0.3s;
+}
+.out-left {
+    transform: translateX(-100%);
+}
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.

@@ -2,4 +2,5 @@
 
 return [
     'lang' => 'en',
+    'fullOther' => 'English',
 ];
