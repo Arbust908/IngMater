@@ -1,31 +1,16 @@
-<nav class="flex w-full justify-between py-3 shadow-md">
-    <button class="w-1/6" id="hamburger_toggler"><i class="far fa-bars"></i></button>
-    <section class="w-4/6">
-        <img src="/img/logo.png" alt="Logo de IngMater" width='100px' title="INGMATER" class="mx-auto">
+<nav class="flex w-full justify-between py-3 lg:py-6 lg:px-3 lg:max-w-5xl lg:mx-auto items-center">
+    <button class="w-1/6 md:hidden" id="hamburger_toggler"><i class="far fa-bars"></i></button>
+    <section class="w-4/6 md:w-2/6">
+        <img src="/img/logo.png" alt="Logo de IngMater" title="INGMATER" class="mx-auto md:ml-3 w-32 lg:w-64">
     </section>
-    <div class="w-1/6"></div>
+    <div class="w-1/6 md:w-4/6">
+        @include('layouts.components.desktopNav')
+    </div>
     <!-- {{ 'routes.' . Route::currentRouteName() }} -->
     <!-- {{ "routes." . Route::currentRouteName() . "" }} -->
     <!-- {{ __( "routes." . Route::currentRouteName() ) }} -->
 </nav>
 @include('layouts.components.mobileNav')
-{{-- @if ( config('app.env') == 'local' )
-<nav class="flex w-full justify-center absolute bottom-0 left-0 pb-2 pl-2">
-    <button
-        class="w-1/4 px-4 py-2 m-2 rounded-full bg-green-600 text-gray-200 shadow-lg hover:bg-main-200 hover:text-white font-serif font-semibold"
-        onclick="event.preventDefault();
-            document.getElementById('lang-change').submit();">
-        <i class="far fa-flag"></i>
-        @lang('lang.lang')
-    </button>
-    <form id="lang-change" action="{{ route('lang') }}" method="POST" class="hidden">
-        {{ csrf_field() }}
-        <input type="hidden" name="languaje" value="@lang('lang.lang')">
-        <input type="hidden" name="page" value="{{ Route::currentRouteName() }}">
-    </form>
-</nav>
-@endif --}}
-
 
 <script>
     const mobileNav = document.getElementById('mobile_nav_bar');
