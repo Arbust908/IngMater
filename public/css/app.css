@@ -693,6 +693,10 @@ video {
           transform: translateX(-100%);
 }
 
+.home-hero-text{
+  max-width: 268px;
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
@@ -5450,6 +5454,10 @@ video {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-xm {
+  max-width: 30rem;
 }
 
 .max-w-lg {
@@ -12208,6 +12216,54 @@ video {
   width: 1px;
 }
 
+.w-xs {
+  width: 20rem;
+}
+
+.w-sm {
+  width: 24rem;
+}
+
+.w-md {
+  width: 28rem;
+}
+
+.w-xm {
+  width: 30rem;
+}
+
+.w-lg {
+  width: 32rem;
+}
+
+.w-xl {
+  width: 36rem;
+}
+
+.w-2xl {
+  width: 42rem;
+}
+
+.w-3xl {
+  width: 48rem;
+}
+
+.w-4xl {
+  width: 56rem;
+}
+
+.w-5xl {
+  width: 64rem;
+}
+
+.w-6xl {
+  width: 72rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -12310,10 +12366,6 @@ video {
 
 .w-11\/12 {
   width: 91.666667%;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .w-screen {
@@ -17116,6 +17168,10 @@ video {
 
   .sm\:max-w-md {
     max-width: 28rem;
+  }
+
+  .sm\:max-w-xm {
+    max-width: 30rem;
   }
 
   .sm\:max-w-lg {
@@ -23874,6 +23930,54 @@ video {
     width: 1px;
   }
 
+  .sm\:w-xs {
+    width: 20rem;
+  }
+
+  .sm\:w-sm {
+    width: 24rem;
+  }
+
+  .sm\:w-md {
+    width: 28rem;
+  }
+
+  .sm\:w-xm {
+    width: 30rem;
+  }
+
+  .sm\:w-lg {
+    width: 32rem;
+  }
+
+  .sm\:w-xl {
+    width: 36rem;
+  }
+
+  .sm\:w-2xl {
+    width: 42rem;
+  }
+
+  .sm\:w-3xl {
+    width: 48rem;
+  }
+
+  .sm\:w-4xl {
+    width: 56rem;
+  }
+
+  .sm\:w-5xl {
+    width: 64rem;
+  }
+
+  .sm\:w-6xl {
+    width: 72rem;
+  }
+
+  .sm\:w-full {
+    width: 100%;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
   }
@@ -23976,10 +24080,6 @@ video {
 
   .sm\:w-11\/12 {
     width: 91.666667%;
-  }
-
-  .sm\:w-full {
-    width: 100%;
   }
 
   .sm\:w-screen {
@@ -28768,6 +28868,10 @@ video {
 
   .md\:max-w-md {
     max-width: 28rem;
+  }
+
+  .md\:max-w-xm {
+    max-width: 30rem;
   }
 
   .md\:max-w-lg {
@@ -35526,6 +35630,54 @@ video {
     width: 1px;
   }
 
+  .md\:w-xs {
+    width: 20rem;
+  }
+
+  .md\:w-sm {
+    width: 24rem;
+  }
+
+  .md\:w-md {
+    width: 28rem;
+  }
+
+  .md\:w-xm {
+    width: 30rem;
+  }
+
+  .md\:w-lg {
+    width: 32rem;
+  }
+
+  .md\:w-xl {
+    width: 36rem;
+  }
+
+  .md\:w-2xl {
+    width: 42rem;
+  }
+
+  .md\:w-3xl {
+    width: 48rem;
+  }
+
+  .md\:w-4xl {
+    width: 56rem;
+  }
+
+  .md\:w-5xl {
+    width: 64rem;
+  }
+
+  .md\:w-6xl {
+    width: 72rem;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -35628,10 +35780,6 @@ video {
 
   .md\:w-11\/12 {
     width: 91.666667%;
-  }
-
-  .md\:w-full {
-    width: 100%;
   }
 
   .md\:w-screen {
@@ -40420,6 +40568,10 @@ video {
 
   .lg\:max-w-md {
     max-width: 28rem;
+  }
+
+  .lg\:max-w-xm {
+    max-width: 30rem;
   }
 
   .lg\:max-w-lg {
@@ -47178,6 +47330,54 @@ video {
     width: 1px;
   }
 
+  .lg\:w-xs {
+    width: 20rem;
+  }
+
+  .lg\:w-sm {
+    width: 24rem;
+  }
+
+  .lg\:w-md {
+    width: 28rem;
+  }
+
+  .lg\:w-xm {
+    width: 30rem;
+  }
+
+  .lg\:w-lg {
+    width: 32rem;
+  }
+
+  .lg\:w-xl {
+    width: 36rem;
+  }
+
+  .lg\:w-2xl {
+    width: 42rem;
+  }
+
+  .lg\:w-3xl {
+    width: 48rem;
+  }
+
+  .lg\:w-4xl {
+    width: 56rem;
+  }
+
+  .lg\:w-5xl {
+    width: 64rem;
+  }
+
+  .lg\:w-6xl {
+    width: 72rem;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -47280,10 +47480,6 @@ video {
 
   .lg\:w-11\/12 {
     width: 91.666667%;
-  }
-
-  .lg\:w-full {
-    width: 100%;
   }
 
   .lg\:w-screen {
@@ -52072,6 +52268,10 @@ video {
 
   .xl\:max-w-md {
     max-width: 28rem;
+  }
+
+  .xl\:max-w-xm {
+    max-width: 30rem;
   }
 
   .xl\:max-w-lg {
@@ -58830,6 +59030,54 @@ video {
     width: 1px;
   }
 
+  .xl\:w-xs {
+    width: 20rem;
+  }
+
+  .xl\:w-sm {
+    width: 24rem;
+  }
+
+  .xl\:w-md {
+    width: 28rem;
+  }
+
+  .xl\:w-xm {
+    width: 30rem;
+  }
+
+  .xl\:w-lg {
+    width: 32rem;
+  }
+
+  .xl\:w-xl {
+    width: 36rem;
+  }
+
+  .xl\:w-2xl {
+    width: 42rem;
+  }
+
+  .xl\:w-3xl {
+    width: 48rem;
+  }
+
+  .xl\:w-4xl {
+    width: 56rem;
+  }
+
+  .xl\:w-5xl {
+    width: 64rem;
+  }
+
+  .xl\:w-6xl {
+    width: 72rem;
+  }
+
+  .xl\:w-full {
+    width: 100%;
+  }
+
   .xl\:w-1\/2 {
     width: 50%;
   }
@@ -58932,10 +59180,6 @@ video {
 
   .xl\:w-11\/12 {
     width: 91.666667%;
-  }
-
-  .xl\:w-full {
-    width: 100%;
   }
 
   .xl\:w-screen {

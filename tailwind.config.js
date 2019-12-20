@@ -338,6 +338,7 @@ module.exports = {
       xs: '20rem',
       sm: '24rem',
       md: '28rem',
+      xm: '30rem',
       lg: '32rem',
       xl: '36rem',
       '2xl': '42rem',
@@ -400,6 +401,7 @@ module.exports = {
     width: theme => ({
       auto: 'auto',
       ...theme('spacing'),
+      ...theme('maxWidth'),
       '1/2': '50%',
       '1/3': '33.333333%',
       '2/3': '66.666667%',

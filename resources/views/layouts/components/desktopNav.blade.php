@@ -23,7 +23,7 @@
         <li class="py-1 pr-2 flex items-center relative">
             <a id="desktop_nav_lang_changer" class="w-full flex justify-center items-center">
                 @lang('nav.change_lang')
-                <i class="fas fa-chevron-down flex items-center transition pl-2" data-state='closed'></i>
+                <i class="fas fa-chevron-down flex items-center transition px-2" data-state='closed'></i>
             </a>
             <button onclick="event.preventDefault();document.getElementById('lang-change').submit();" class="hidden w-full py-3 mt-2 rounded shadow absolute left-0 bg-white mt-10" id="desktop_nav_other_lang">
                 @lang('lang.fullOther')
@@ -38,28 +38,28 @@
 </nav>
 
 <script>
-    const langChanger = document.getElementById('desktop_nav_lang_changer');
-    const otherLang = document.getElementById('desktop_nav_other_lang');
+    const desk_langChanger = document.getElementById('desktop_nav_lang_changer');
+    const desk_ = document.getElementById('desktop_nav_other_lang');
 
-    const chevronRotator = (element) => {
-        if(element.dataset.state == 'closed') {
-            element.classList.add('rotated');
-            element.dataset.state = 'opened';
-            return true;
-        } else if(element.dataset.state == 'opened') {
-            element.classList.remove('rotated');
-            element.dataset.state = 'closed';
-            return false;
-        }
-    }
+    // const chevronRotator = (element) => {
+    //     if(element.dataset.state == 'closed') {
+    //         element.classList.add('rotated');
+    //         element.dataset.state = 'opened';
+    //         return true;
+    //     } else if(element.dataset.state == 'opened') {
+    //         element.classList.remove('rotated');
+    //         element.dataset.state = 'closed';
+    //         return false;
+    //     }
+    // }
 
-    langChanger.addEventListener('click', (event) => {
+    desk_langChanger.addEventListener('click', (event) => {
         event.preventDefault();
-        let chevron = langChanger.querySelector('i.fa-chevron-down');
+        let chevron = desk_langChanger.querySelector('i.fa-chevron-down');
         if( chevronRotator(chevron) ){
-            otherLang.classList.remove('hidden');
+            desk_.classList.remove('hidden');
         } else {
-            otherLang.classList.add('hidden');
+            desk_.classList.add('hidden');
         }
     });
 </script>
