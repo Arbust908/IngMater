@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMailer;
+use App\Mail\NewsletterMailer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
+
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -108,5 +112,30 @@ class HomeController extends Controller
         //dd('Idioma '. $lang, 'Pagina '. $page, App::getLocale(), url( '/' . $page ));
         if($page == '/') { return redirect( url( $page ) ); }
         return redirect( url( '/' . $page ) );
+    }
+
+    // Newsletter
+    public function newsletterMailer(Request $request)
+    {
+        $email = $request->input('email');
+        Mail::to('contacto@ingmater.com')->queue(new NewsletterMailer($email));
+        // --
+        //return view('mails.mail');
+        return response()->json(['email' => $email], 200);
+    }
+
+    // Contacto
+    public function conactotMailer(Request $request)
+    {
+        $mailData = [
+            'name' => $request->input('name'),
+            'empresa' => $request->input('empresa'),
+            'email' => $request->input('email'),
+            'telefono' => $request->input('telefono'),
+            'msg' => $request->input('msg'),
+        ];
+        Mail::to('contacto@ingmater.com')->queue(new ContactMailer($mailData));
+        // --
+        return view('mails.mail');
     }
 }

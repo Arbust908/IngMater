@@ -10,10 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 Auth::routes();
 foreach( ['es', 'en'] as $lang ){
     Route::get('/' . __('routes.home', [], $lang) , 'HomeController@index')->name('home');
@@ -25,5 +21,12 @@ foreach( ['es', 'en'] as $lang ){
     Route::get('/' . __('routes.cyc', [], $lang) , 'HomeController@cyc')->name('cyc');
 }
 
-
 Route::post('/lang/', 'HomeController@lang')->name('lang');
+
+Route::get('/mailer/', 'HomeController@mailmail');
+Route::post('/mailer/', 'HomeController@mailer');
+//
+Route::post('/nl_mail/', 'HomeController@newsletterMailer');
+Route::post('/ct_mail/', 'HomeController@conactotMailer');
+
+

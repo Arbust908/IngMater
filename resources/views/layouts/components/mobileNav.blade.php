@@ -31,11 +31,11 @@
                 {{-- Armar DropDown con lenguaje --}}
                 {{-- @lang('lang.lang') --}}
             </a>
-            <button onclick="event.preventDefault();document.getElementById('lang-change').submit();" class="hidden w-full py-3 mt-2 rounded shadow" id="mobile_nav_other_lang">
+            <button onclick="event.preventDefault();document.getElementById('lang-change-mob').submit();" class="hidden w-full py-3 mt-2 rounded shadow" id="mobile_nav_other_lang">
                 @lang('lang.fullOther')
             </button>
         </li>
-        <form id="lang-change" action="{{ route('lang') }}" method="POST" class="hidden">
+        <form id="lang-change-mob" action="{{ route('lang') }}" method="POST" class="hidden">
             {{ csrf_field() }}
             <input type="hidden" name="languaje" value="@lang('lang.lang')">
             <input type="hidden" name="page" value="{{ Route::currentRouteName() }}">

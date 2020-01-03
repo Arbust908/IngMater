@@ -7,9 +7,9 @@
     </section>
     <section class="flex flex-col justify-center p-2 border-b border-main-100 md:order-3 md:w-1/3 md:border-l md:border-b-0">
         <h4 class="text-base text-main-100 font-bold py-2 ">Nuestro Newsletter</h4>
-        <form action="" method="post">
+        <form action="" method="post" id="newsletter">
             @csrf
-            <input class="rounded-full px-4 py-2 w-full bg-gray-100 placeholder-gris-500 text-sm mb-4 md:max-w-xs md:mx-auto" type="text" placeholder="mimail@mail.com">
+            <input class="rounded-full px-4 py-2 w-full bg-gray-100 placeholder-gris-500 text-sm mb-4 md:max-w-xs md:mx-auto" type="text" placeholder="mimail@mail.com" name="email">
             <button class="rounded-full w-full text-center text-gray-100 font-bold px-4 py-2 text-sm bg-main-100 mb-4 md:max-w-xs md:mx-auto" type="submit">Quiero suscribirme</button>
         </form>
     </section>
@@ -24,3 +24,42 @@
         <small class="text-sm text-gray-700 flex justify-center items-center font-bold pt-4"> <img class="w-3 h-3 mr-1" src="/img/copyright-regular.svg"> Copyright 2019 Ingmater </small>
     </section>
 </footer>
+<script>
+    const nw_btn = document.querySelector('#newsletter>button');
+    nw_btn.addEventListener('click', (event) => {
+        event.preventDefault();
+        nw_btn.setAttribute('disabled', true);
+        let fd = new FormData();
+        // console.log(document.getElementById('newsletter').elements);
+        const data = [...document.getElementById('newsletter').elements];
+
+        data.forEach(input => {
+            // console.log(input);
+            // console.log(input.name);
+            // console.log(input.value);
+            fd.set(input.name, input.value);
+        });
+
+        fetch('/nl_mail/', { // a donde
+            method: 'post', // como
+            body: fd // que
+        })
+
+        .then((response) => {
+            if (response.status !== 200) {
+                throw new Error(response.status)
+            }
+            nw_btn.removeAttribute('disabled');
+            inputReset(formEmail);
+            // Modal -> Exito!
+            console.log(response);
+            console.log('Exito');
+        })
+
+        .catch( () => {
+            nw_btn.removeAttribute('disabled');
+            // Modal -> Falla!
+            console.log('Falla');
+        })
+    });
+</script>
