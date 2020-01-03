@@ -1,4 +1,4 @@
-<nav id="desktop_nav_bar" class="hidden md:block">
+<nav id="desktop_nav_bar" class="hidden md:block lg:text-lg">
     <ul class="flex text-center text-main-100 uppercase font-bold font-sans w-full justify-around items center">
         <li class="py-1 pr-2 flex items-center">
             <a href="{{ url(__('routes.who')) }}">
@@ -15,7 +15,7 @@
                 @lang('contact.title')
             </a>
         </li>
-        <li class="py-1 pr-2 flex items-center">
+        <li class="py-1 pr-2 flex items-center lg:text-xl">
             <a href="https://www.linkedin.com/">
                 <i class="fab fa-linkedin"></i>
             </a>
@@ -25,8 +25,11 @@
                 @lang('nav.change_lang')
                 <i class="fas fa-chevron-down flex items-center transition px-2" data-state='closed'></i>
             </a>
-            <button onclick="event.preventDefault();document.getElementById('lang-change').submit();" class="hidden w-full py-3 mt-2 rounded shadow absolute left-0 bg-white mt-10" id="desktop_nav_other_lang">
-                @lang('lang.fullOther')
+            <button onclick="event.preventDefault();document.getElementById('lang-change').submit();" class="hidden w-full py-3 px-1 rounded shadow absolute left-0 bg-white mt-12 uppercase flex items-center justify-around" id="desktop_nav_other_lang">
+                @lang('lang.flag')
+                <span class="text-sm">
+                    @lang('lang.lang')
+                </span>
             </button>
         </li>
         <form id="lang-change" action="{{ route('lang') }}" method="POST" class="hidden">

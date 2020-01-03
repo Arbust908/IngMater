@@ -1,4 +1,4 @@
-<footer class="w-full bg-gris-700 text-center px-4 pt-3 pb-20 md:flex md:pb-6">
+<footer class="w-full bg-gris-700 text-center px-4 pt-3 pb-20 md:flex md:pb-6 self-end">
     <section class="flex flex-col justify-center p-2 border-b border-main-100 md:order-2 md:w-1/3 md:border-l md:border-b-0">
         <h4 class="text-base text-main-100 font-bold py-2 leading-normal pb-1">
             “Asesorando a empresas acerca de Ingeniería y Ciencia de los materiales”
