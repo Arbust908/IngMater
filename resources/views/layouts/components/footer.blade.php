@@ -25,6 +25,7 @@
     </section>
 </footer>
 <script>
+    let padre = document.querySelector('body');
     const nw_btn = document.querySelector('#newsletter>button');
     nw_btn.addEventListener('click', (event) => {
         event.preventDefault();
@@ -52,6 +53,11 @@
             nw_btn.removeAttribute('disabled');
             inputReset(formEmail);
             // Modal -> Exito!
+            newModal(padre , [
+                "@lang('modal.title')",
+                "@lang('modal.msg')",
+                "@lang('modal.disclamer')"
+            ]);
             console.log(response);
             console.log('Exito');
         })
@@ -59,6 +65,10 @@
         .catch( () => {
             nw_btn.removeAttribute('disabled');
             // Modal -> Falla!
+            newModal(padre , [
+                "@lang('modal.fail')",
+                "@lang('modal.fail-msg')"
+            ]);
             console.log('Falla');
         })
     });

@@ -697,6 +697,10 @@ video {
   max-width: 268px;
 }
 
+.backdrop-modal {
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.

@@ -13,7 +13,7 @@
         </div>
             {{-- Creo que en blanco va a quedar mejor --}}
     </section>
-    <section class="w-full py-8 px-6 md:flex md:justify-around">
+    <section class="w-full py-8 px-6 lg:flex lg:justify-around">
         {{-- Blob con icono nombre y link --}}
         @each('paginas.components.home_card', __('home.cards'), 'card')
     </section>

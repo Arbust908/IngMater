@@ -20,7 +20,7 @@
             </a>
         </li>
         <li class="border-b border-gris-500 py-3">
-            <a href="https://www.linkedin.com/">
+            <a href="https://www.linkedin.com/company/ingmater-consultores/">
                 Linkedin <i class="fab fa-linkedin"></i>
             </a>
         </li>

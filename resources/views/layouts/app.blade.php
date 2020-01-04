@@ -23,6 +23,7 @@
         @Footer()@endFooter
     </div>
     <!-- Scripts -->
+    @include('layouts.components.newModal')
     <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>

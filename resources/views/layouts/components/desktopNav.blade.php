@@ -16,7 +16,7 @@
             </a>
         </li>
         <li class="py-1 pr-2 flex items-center lg:text-xl">
-            <a href="https://www.linkedin.com/">
+            <a href="https://www.linkedin.com/company/ingmater-consultores/">
                 <i class="fab fa-linkedin"></i>
             </a>
         </li>
