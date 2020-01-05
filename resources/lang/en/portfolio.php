@@ -1,40 +1,30 @@
 <?php
 
 return [
-    'title' => 'Portfolio EN',
+    'title' => 'Portfolio',
     'banner' => '/img/portfolio.jpg',
-    'boxes' => [
-        'client1' => [
-            'name' => 'Client1',
-            'logo' => '/img/portfolio.jpg',
-            'work1' => [
-               'title' => 'Work1', 
-               'text' => 'Somos una empresa integrada por ingenieros con vastos conocimientos técnicos y cientificos en el campo de la ingieneria de los materiales, los cuales nos hemos propuesto utilizar para brindar servicios de consultoria que ayuden a promover el crecimiento del sector industrial',
-               'img' => ''
-            ],
-            'work2' => [
-                'title' => 'Work2', 
-                'text' => 'Somos una empresa integrada por ingenieros con vastos conocimientos técnicos y cientificos en el campo de la ingieneria de los materiales, los cuales nos hemos propuesto utilizar para brindar servicios de consultoria que ayuden a promover el crecimiento del sector industrial',
-                'img' => ''
-             ]
+    'subtitle' => 'We present a selection of the work done by the company:',
+    'clients' => [
+        [
+            'name' => 'Venga S.A.',
+            'logo' => '/img/vengasa_logo.png',
+            'logo-limits' => '100-150',
+            'desc' => 'Optimization of heat and thermomechanical treatment of aluminum alloys AA 2019 and 2219 for aerospace use.',
+            'img' => '/img/vengasa.jpg',
         ],
-        'client2' => [
-            'name' => 'Client2',
-            'logo' => '/img/portfolio.jpg',
-            'work1' => [
-               'title' => 'Work1', 
-               'text' => 'Somos una empresa integrada por ingenieros con vastos conocimientos técnicos y cientificos en el campo de la ingieneria de los materiales, los cuales nos hemos propuesto utilizar para brindar servicios de consultoria que ayuden a promover el crecimiento del sector industrial',
-               'img' => ''
-            ]
+        [
+            'name' => 'Gestamp S.A.',
+            'logo' => '/img/gestampsa_logo.png',
+            'logo-limits' => '140-221',
+            'desc' => 'Characterization and assembly line failure analysis of galvanized steel sheet for cold forming of auto parts.',
+            'img' => '/img/gestampsa.jpg',
         ],
-        'client3' => [
-            'name' => 'Client3',
-            'logo' => '/img/portfolio.jpg',
-            'work1' => [
-               'title' => 'Work1', 
-               'text' => 'Somos una empresa integrada por ingenieros con vastos conocimientos técnicos y cientificos en el campo de la ingieneria de los materiales, los cuales nos hemos propuesto utilizar para brindar servicios de consultoria que ayuden a promover el crecimiento del sector industrial',
-               'img' => ''
-            ]
-        ]
+        [
+            'name' => 'Exal S.A.',
+            'logo' => '/img/exalsa_logo.png',
+            'logo-limits' => '120-190',
+            'desc' => 'Microstructural and mechanical characterization of aluminum alloy throughout the different stages of the manufacture of a container by impact extrusion.',
+            'img' => '/img/exalsa.jpg',
+        ],
     ]
 ];

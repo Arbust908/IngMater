@@ -3,38 +3,28 @@
 return [
     'title' => 'Portfolio',
     'banner' => '/img/portfolio.jpg',
-    'boxes' => [
-        'client1' => [
-            'name' => 'Cliente1',
-            'logo' => '/img/portfolio.jpg',
-            'work1' => [
-               'title' => 'Trabajo1' ,
-               'text' => 'Somos una empresa integrada por ingenieros con vastos conocimientos técnicos y cientificos en el campo de la ingieneria de los materiales, los cuales nos hemos propuesto utilizar para brindar servicios de consultoria que ayuden a promover el crecimiento del sector industrial',
-               'img' => ''
-            ],
-            'work2' => [
-                'title' => 'Trabajo2',
-                'text' => 'Somos una empresa integrada por ingenieros con vastos conocimientos técnicos y cientificos en el campo de la ingieneria de los materiales, los cuales nos hemos propuesto utilizar para brindar servicios de consultoria que ayuden a promover el crecimiento del sector industrial',
-                'img' => ''
-             ]
-            ],
-        'client2' => [
-            'name' => 'Cliente2',
-            'logo' => '/img/portfolio.jpg',
-            'work1' => [
-               'title' => 'Trabajo1' ,
-               'text' => 'Somos una empresa integrada por ingenieros con vastos conocimientos técnicos y cientificos en el campo de la ingieneria de los materiales, los cuales nos hemos propuesto utilizar para brindar servicios de consultoria que ayuden a promover el crecimiento del sector industrial',
-               'img' => ''
-            ]
+    'subtitle' => 'A continuación se presenta una selección de los trabajos realizados por la empresa:',
+    'clients' => [
+        [
+            'name' => 'Venga S.A.',
+            'logo' => '/img/vengasa_logo.png',
+            'logo-limits' => '100-150',
+            'desc' => 'Optimización de tratamiento térmico y termomecánico de aleaciones de aluminio AA 2019 y 2219 para uso aeroespacial.',
+            'img' => '/img/vengasa.jpg',
         ],
-        'client3' => [
-            'name' => 'Cliente3',
-            'logo' => '/img/portfolio.jpg',
-            'work1' => [
-               'title' => 'Trabajo1' ,
-               'text' => 'Somos una empresa integrada por ingenieros con vastos conocimientos técnicos y cientificos en el campo de la ingieneria de los materiales, los cuales nos hemos propuesto utilizar para brindar servicios de consultoria que ayuden a promover el crecimiento del sector industrial',
-               'img' => ''
-            ]
-        ]
+        [
+            'name' => 'Gestamp S.A.',
+            'logo' => '/img/gestampsa_logo.png',
+            'logo-limits' => '140-221',
+            'desc' => 'Caracterización y análisis de falla en línea de montaje de chapas de Acero Galvanizado para conformado en frío de autopartes.',
+            'img' => '/img/gestampsa.jpg',
+        ],
+        [
+            'name' => 'Exal S.A.',
+            'logo' => '/img/exalsa_logo.png',
+            'logo-limits' => '120-190',
+            'desc' => 'Caracterización microestructural y mecánica de aleación de alumino a lo largo de las distintas etapas de la fabricación de un envase mediante extrusión por impacto.',
+            'img' => '/img/exalsa.jpg',
+        ],
     ]
 ];
