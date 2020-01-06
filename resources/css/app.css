@@ -60,6 +60,25 @@
 .backdrop-modal {
     background-color: hsla(0, 0%, 100%, 0.5);
 }
+
+#who_sub_carousel:after {
+    content: 'flickity';
+    display: none;
+}
+#who_exps:after {
+    content: 'flickity';
+    display: none;
+}
+@media screen and ( min-width: 768px ) {
+    /* disable Flickity for large devices */
+    #who_sub_carous:after {
+        content: '';
+    }
+    #who_exps:after {
+        content: '';
+    }
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.

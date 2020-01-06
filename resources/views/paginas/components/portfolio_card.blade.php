@@ -10,9 +10,9 @@
         src="{{ url($client['logo']) }}"
         alt="{{$client['name']}} logo"
         data-limits="{{$client['logo-limits']}}"
-        class="client-logo">
+        class="client-logo md:mx-2">
 
-    <p class="text-gris-300 text-center text-base py-4 font-regular leading-relaxed lg:max-w-2xl lg:text-left">
+    <p class="text-gris-300 text-center text-base py-4 font-regular leading-relaxed lg:text-left md:max-w-lg">
         {{$client['desc']}}
     </p>
 

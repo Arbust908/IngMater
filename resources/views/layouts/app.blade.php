@@ -10,8 +10,9 @@
     <title>@yield('title'){{ config('app.name', 'Laravel') }}</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2f31638581.js" crossorigin="anonymous"></script>
-
     <!-- Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body class="bg-gris-700 min-h-screen antialiased leading-none font-sans">
