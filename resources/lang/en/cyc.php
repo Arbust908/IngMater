@@ -1,29 +1,24 @@
 <?php
 
 return [
-    'title' => 'Training and Certifications',
+    'title' => 'TRAINING AND CERTIFICATIONS',
     'banner' => '/img/template.jpg',
     'cajas' => [
         [
-            'title' => 'Title',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
+            'title' => 'ISO 9001:2015',
+            'desc' => [
+                'Advice on quality management systems',
+                'Implementation of quality management systems, under ISO 9001: 2015'
+            ],
+            'image' => '/img/cyc(1).jpg'
         ] ,
         [
-            'title' => 'Title',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
+            'title' => 'COURSES',
+            'desc' => [
+                'Standard and customized training (materials science, welding, ISO 9001: 2015).'
+            ],
+            'image' => '/img/cyc(2).jpg'
         ] ,
-        [
-            'title' => 'Title',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
-        ] ,
-        [
-            'title' => 'Title',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
-        ]
     ]
 ];
 

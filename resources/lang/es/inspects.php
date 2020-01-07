@@ -1,28 +1,28 @@
 <?php
 
 return [
-    'title' => 'Inspecciones',
+    'title' => 'INSPECCIONES',
     'banner' => '/img/template.jpg',
     'cajas' => [
         [
-            'title' => 'Título',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
+            'title' => 'INSPECCIÓN EN SOLDADURA',
+            'desc' => [
+                'Calificación de procedimientos y soldadores.',
+                'Redacción de procedimientos de soldadura.',
+                'Asesoramiento en fabricación por soldadura.'
+            ],
+            'image' => '/img/inspects(1).jpg'
         ] ,
         [
-            'title' => 'Título',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
+            'title' => 'INSPECCIÓN DE FABRICACIÓN',
+            'desc' => [
+                'Auditorías de fabricación.',
+                'Aseguramiento de calidad.',
+                'Representación técnica.'
+            ],
+            'image' => '/img/inspects(2).jpg'
         ] ,
-        [
-            'title' => 'Título',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
-        ] ,
-        [
-            'title' => 'Título',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
-        ]
     ]
 ];
+
+

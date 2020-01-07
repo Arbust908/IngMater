@@ -1,28 +1,28 @@
 <?php
 
 return [
-    'title' => 'Inspections',
+    'title' => 'INSPECTIONS',
     'banner' => '/img/template.jpg',
     'cajas' => [
         [
-            'title' => 'Title',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
+            'title' => 'WELDING INSPECTION',
+            'desc' => [
+                'Qualification of procedures and welders.',
+                'Welding procedures development.',
+                'Welding manufacturing advice.'
+            ],
+            'image' => '/img/inspects(1).jpg'
         ] ,
         [
-            'title' => 'Title',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
+            'title' => 'MANUFACTURING INSPECTION',
+            'desc' => [
+                'Manufacturing audits.',
+                'Quality assurement.',
+                'Technical representation.'
+            ],
+            'image' => '/img/inspects(2).jpg'
         ] ,
-        [
-            'title' => 'Title',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
-        ] ,
-        [
-            'title' => 'Title',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
-        ]
     ]
 ];
+
+

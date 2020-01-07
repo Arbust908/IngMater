@@ -1,7 +1,9 @@
 <nav class="flex w-full justify-between py-3 lg:py-6 lg:px-3 lg:max-w-5xl lg:mx-auto items-center">
     <button class="w-1/6 md:hidden" id="hamburger_toggler"><i class="far fa-bars"></i></button>
     <section class="w-4/6 md:w-2/6">
-        <img src="/img/logo.png" alt="Logo de IngMater" title="INGMATER" class="mx-auto md:ml-3 w-32 lg:w-64">
+        <a href="@lang('routes.home')">
+            <img src="/img/logo.png" alt="Logo de IngMater" title="INGMATER" class="mx-auto md:ml-3 w-32 lg:w-64">
+        </a>
     </section>
     <div class="w-1/6 md:w-4/6">
         @include('layouts.components.desktopNav')

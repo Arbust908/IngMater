@@ -1,28 +1,33 @@
 <?php
 
 return [
-    'title' => 'Engineering and Development',
+    'title' => 'ENGINEERING AND DEVELOPMENT',
     'banner' => '/img/template.jpg',
     'cajas' => [
         [
-            'title' => 'Title',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
+            'title' => 'MATERIAL CHARACTERIZATION',
+            'desc' => [
+                'Metallographic analysis.',
+                'Optical microscopy and SEM.',
+                'Standard and custom mechanical tests (tensile, bend, impact).'
+            ],
+            'image' => '/img/iyd(1).jpg'
         ] ,
         [
-            'title' => 'Title',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
+            'title' => 'FAILURE ANALYSIS',
+            'desc' => [
+                'Root cause evaluation.',
+                'Process improvement advice.'
+            ],
+            'image' => '/img/iyd(2).jpg'
         ] ,
         [
-            'title' => 'Title',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
+            'title' => 'MATERIALS SELECTION',
+            'desc' => [
+                'Technical specifications development.',
+                'Materials and heat treatment optimization.'
+            ],
+            'image' => '/img/iyd(3).jpg'
         ] ,
-        [
-            'title' => 'Title',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
-        ]
     ]
 ];

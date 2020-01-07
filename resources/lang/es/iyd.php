@@ -1,28 +1,33 @@
 <?php
 
 return [
-    'title' => 'Ingeniería y Desarrollo',
+    'title' => 'INGENIERÍA Y DESARROLLO',
     'banner' => '/img/template.jpg',
     'cajas' => [
         [
-            'title' => 'Título',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
+            'title' => 'CARACTERIZACIÓN DE MATERIALES',
+            'desc' => [
+                'Análisis metalográfico.',
+                'Microscopía óptica y SEM.',
+                'Ensayos mecánicos estándar y a medida (tracción, plegado, impacto).'
+            ],
+            'image' => '/img/iyd(1).jpg'
         ] ,
         [
-            'title' => 'Título',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
+            'title' => 'ANÁLISIS DE FALLA',
+            'desc' => [
+                'Evaluación de causa raíz.',
+                'Asesoramiento en mejora de procesos.',
+            ],
+            'image' => '/img/iyd(2).jpg'
         ] ,
         [
-            'title' => 'Título',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
+            'title' => 'SELECCIÓN DE MATERIALES',
+            'desc' => [
+                'Redacción de especificaciones técnicas.',
+                'Optimización de materiales y tratamientos térmicos.'
+            ],
+            'image' => '/img/iyd(3).jpg'
         ] ,
-        [
-            'title' => 'Título',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nisl leo. Fusce tempor porta nunc at ultrices. Vivamus scelerisque ante velit, sit amet scelerisque leo elementum quis. Suspendisse dui orci, pharetra nec odio hendrerit, malesuada placerat odio.',
-            'image' => '/img/caja1.jpg'
-        ]
     ]
 ];
