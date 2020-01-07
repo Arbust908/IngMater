@@ -39,10 +39,22 @@
 </section>
 <section class="w-11/12 mx-auto p-4 mb-6 flex flex-col md:w-3/12 md:rounded-lg md:shadow md:float-right md:mt-8 md:mr-6">
     <img src="/img/envelope-solid.svg" alt="" class="mx-auto mb-5" height="30" width="40">
-    <h4 class="text-center font-bold text-main-100 pb-6 text-xxl uppercase">@lang('who.map.title')</h4>
-    <h5 class="text-center font-bold text-main-100 pb-6 text-xl">@lang('who.map.mail')</h5>
-    <h4 class="text-center font-bold text-main-100 pt-4 pb-4 text-lg">@lang('who.map.hq.location')</h4>
-    <p class="text-center text-gris-300 text-lg">@lang('who.map.hq.phone')</p>
+    <h4 class="text-center font-bold text-main-100 pb-6 text-xxl uppercase">
+        @lang('who.map.title')
+    </h4>
+    <h5 class="text-center font-bold text-main-100 pb-6 text-xl">
+        <a href="mailto:contacto@ingmater.com">
+            @lang('who.map.mail')
+        </a>
+    </h5>
+    <h4 class="text-center font-bold text-main-100 pt-4 pb-4 text-lg">
+        @lang('who.map.hq.location')
+    </h4>
+    <p class="text-center text-gris-300 text-lg">
+        <a href="tel:+54 9 11 5953-9770">
+            @lang('who.map.hq.phone')
+        </a>
+    </p>
 </section>
 <section class="w-full p-4 mb-6 flex flex-col">
     <h4 class="text-center font-bold text-main-100 pb-6 text-xxl uppercase md:border-t md:border-gris-400 md:pt-6">@lang('who.reviews.title')</h4>

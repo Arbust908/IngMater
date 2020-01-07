@@ -43,7 +43,7 @@
 
         // Generar el backdrop
         let modalBackdrop = document.createElement('div');
-        modalBackdrop.classList.add('backdrop-modal', 'w-full', 'h-screen', 'flex', 'justify-center', 'items-center', 'fixed', 'inset-0');
+        modalBackdrop.classList.add('backdrop-modal', 'w-full', 'h-screen', 'flex', 'justify-center', 'items-center', 'fixed', 'inset-0', 'z-modal');
 
 
         // Ensamblado

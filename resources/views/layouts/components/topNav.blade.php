@@ -1,4 +1,4 @@
-<nav class="flex w-full justify-between py-3 lg:py-6 lg:px-3 lg:max-w-5xl lg:mx-auto items-center">
+<nav class="flex w-full justify-between py-3 lg:py-6 lg:px-3 lg:max-w-5xl lg:mx-auto items-center z-40">
     <button class="w-1/6 md:hidden" id="hamburger_toggler"><i class="far fa-bars"></i></button>
     <section class="w-4/6 md:w-2/6">
         <a href="@lang('routes.home')">

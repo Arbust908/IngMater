@@ -1,16 +1,20 @@
 <footer class="w-full bg-gris-700 text-center px-4 pt-3 pb-20 md:flex md:pb-6 self-end">
     <section class="flex flex-col justify-center p-2 border-b border-main-100 md:order-2 md:w-1/3 md:border-l md:border-b-0">
         <h4 class="text-base text-main-100 font-bold py-2 leading-normal pb-1">
-            “Asesorando a empresas acerca de Ingeniería y Ciencia de los materiales”
+            @lang('footer.inspiration')
         </h4>
 
     </section>
     <section class="flex flex-col justify-center p-2 border-b border-main-100 md:order-3 md:w-1/3 md:border-l md:border-b-0">
-        <h4 class="text-base text-main-100 font-bold py-2 ">Nuestro Newsletter</h4>
+        <h4 class="text-base text-main-100 font-bold py-2 ">
+            @lang('footer.newsletter')
+        </h4>
         <form action="" method="post" id="newsletter">
             @csrf
             <input class="rounded-full px-4 py-2 w-full bg-gray-100 placeholder-gris-500 text-sm mb-4 md:max-w-xs md:mx-auto" type="text" placeholder="mimail@mail.com" name="email">
-            <button class="rounded-full w-full text-center text-gray-100 font-bold px-4 py-2 text-sm bg-main-100 mb-4 md:max-w-xs md:mx-auto" type="submit">Quiero suscribirme</button>
+            <button class="rounded-full w-full text-center text-gray-100 font-bold px-4 py-2 text-sm bg-main-100 mb-4 md:max-w-xs md:mx-auto" type="submit">
+                @lang('footer.subscribe')
+            </button>
         </form>
     </section>
     <section class="flex flex-col justify-center pt-10 px-2 text-center md:order-1 md:w-1/3 md:flex-row md:flex-wrap md:pt-2">
