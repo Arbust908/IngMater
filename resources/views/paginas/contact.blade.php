@@ -23,7 +23,8 @@
     <h4 class="text-main-100 text-lg uppercase pb-2 border-b border-main-100 mb-8 font-bold">
         @lang('contact.form.title')
     </h4>
-    <form action="" method="post" id="contact">
+    <form id="contact">
+        @csrf
         @foreach (__('contact.form.inputs') as $input)
         <fieldset>
             <label for="{{ $input['name'] }}" class="text-gris-300 w-full pb-3 inline-block">
@@ -116,6 +117,7 @@
     let ct_padre = document.querySelector('body');
     const ct_btn = document.querySelector('#contact-btn');
     const ct_inputs = document.querySelectorAll('[contactinput]');
+    const ct_csrf = document.querySelector('[name="_token"]');
 
     console.info(ct_inputs);
     ct_inputs.forEach(ct_input => {
@@ -129,6 +131,8 @@
         event.preventDefault();
         ct_btn.setAttribute('disabled', true);
         let fd = new FormData();
+        const ct_csrf = document.querySelector('[name="_token"]');
+        fd.set(ct_csrf.name, ct_csrf.value);
         console.log(document.getElementById('newsletter').elements);
         const data = [...document.querySelectorAll('[contactinput]')];
         let errors = [];
