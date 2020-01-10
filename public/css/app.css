@@ -723,6 +723,11 @@ video {
   }
 }
 
+[disabled] {
+  background-color: hsla(0, 0%, 43%, 1);
+  color: hsla(0, 0%, 0%, 1);
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.

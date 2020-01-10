@@ -1,10 +1,204 @@
 @extends('layouts.app')
 
 @section('content')
-<section>
-    <h2>{{ __('contact.title') }}</h2>
-
-    <p> @lang('contact.subtitle') </p>
-
+<main>
+    <section class="flex justify-center items-center relative pt-5 pb-6 bg-no-repeat bg-top bg-cover"
+    style="background-image: url({{ url(__('contact.banner')) }});">
+    <article class="w-full text-center relative z-10 text-main-100 py-4">
+        <h2 class="text-xxl font-bold uppercase flex items-center justify-center">
+            {{ __('contact.title') }}
+            <a href="@lang('routes.iyd')" class="-ml-2">
+                <span class="fa-stack fa">
+                    <i class="fas fa-square fa-stack-1x text-white"></i>
+                    <i class="fab fa-linkedin fa-stack-1x"></i>
+                </span>
+            </a>
+        </h2>
+    </article>
 </section>
+<section class="px-6 pt-5 mb-12">
+    <h4 class="text-main-100 text-lg uppercase pb-2 border-b border-main-100 mb-8 font-bold">
+        @lang('contact.form.title')
+    </h4>
+    <form action="" method="post" id="contact">
+        @foreach (__('contact.form.inputs') as $input)
+        <fieldset>
+            <label for="{{ $input['name'] }}" class="text-gris-300 w-full pb-3 inline-block">
+                {{$input['label']}}
+                <span class="text-red-500">
+                    {{ $input['required'] === 'true' ? '*' : '' }}
+                </span>
+            </label>
+            <input
+            type="{{ $input['type'] }}"
+            {{ $input['required'] === 'true' ? 'required' : '' }}
+            placeholder="{{ $input['placeholder'] }}"
+            name="{{ $input['name'] }}"
+            contactinput
+            class="border border-gris-800 py-2 px-4 rounded-full w-full mb-4">
+        </fieldset>
+        @endforeach
+        <fieldset>
+            <label for="query" class="text-gris-300 w-full pb-3 inline-block">
+                @lang('contact.form.area')
+                <span class="text-red-500">*</span>
+            </label>
+            <textarea name="query" rows="12" contactinput class="border border-gris-800 py-2 px-4 rounded-xl w-full mb-4"></textarea>
+        </fieldset>
+        <fieldset class="px-4 flex flex-col justify-center">
+            <div class="mb-10">
+                <button id="contact_check" class="font-bold text-main-100 pr-1">
+                    <i class="far fa-square"></i>
+                </button>
+                <input type="hidden" name="news" value="false" contactinput>
+                <label for="news" class="text-gris-300">
+                    @lang('contact.form.check')
+                </label>
+            </div>
+            <button class="text-xl font-bold py-2 px-10 rounded-full bg-main-100 text-white mx-auto inline-block" id="contact-btn">
+                @lang('contact.form.btn')
+            </button>
+        </fieldset>
+        <script>
+            const checkbox = document.getElementById('contact_check');
+            const boxIcon = checkbox.querySelector('i.far');
+            const newsValue = document.querySelector('input[name="news"]');
+            checkbox.addEventListener('click', (eve) => {
+                eve.preventDefault()
+                boxIcon.classList.toggle('fa-check-square')
+                boxIcon.classList.toggle('fa-square')
+                newsValue.value = newsValue.value === 'false'
+                ? 'true'
+                : 'false'
+            })
+        </script>
+    </form>
+</section>
+<section class="px-6">
+    <h4 class="text-main-100 text-lg uppercase pb-2 border-b border-main-100 mb-8 font-bold">
+        @lang('contact.map.title')
+    </h4>
+    <article class="flex flex-col justify-center font-bold text-main-200 text-center text-xl mb-6">
+        @foreach (__('contact.map.hqs') as $hq)
+        <h5 class="pb-4">
+            {{ $hq['location'] }} -
+            <span class="uppercase">{{ $hq['province'] }}</span>
+        </h5>
+        @endforeach
+    </article>
+    <article class="pb-12">
+        <img src="/img/envelope-solid.svg" alt="" class="mx-auto mb-5" height="30" width="40">
+        <h5 class="text-center font-bold text-main-100 pb-6 text-xl">
+            <a href="mailto:contacto@ingmater.com">
+                @lang('who.map.mail')
+            </a>
+        </h5>
+        <h4 class="text-center font-bold text-main-100 pb-1 text-lg uppercase">
+            @lang('who.map.hq.location')
+        </h4>
+        <p class="text-center text-gris-300 text-lg">
+            <a href="tel:+54 9 11 5953-9770">
+                @lang('who.map.hq.phone')
+            </a>
+        </p>
+    </article>
+    <article class="pb-12">
+        <img src="/img/mapa-contact.png" alt="@lang('contact.map.imgAlt')">
+    </article>
+</section>
+<script name="ct_script">
+    let ct_padre = document.querySelector('body');
+    const ct_btn = document.querySelector('#contact-btn');
+    const ct_inputs = document.querySelectorAll('[contactinput]');
+
+    console.info(ct_inputs);
+    ct_inputs.forEach(ct_input => {
+        ct_input.addEventListener('focus', () => {
+            if( ct_input.classList.contains('border-red-600') ) {
+                resetInputErrors(ct_input);
+            }
+        })
+    });
+    ct_btn.addEventListener('click', (event) => {
+        event.preventDefault();
+        ct_btn.setAttribute('disabled', true);
+        let fd = new FormData();
+        console.log(document.getElementById('newsletter').elements);
+        const data = [...document.querySelectorAll('[contactinput]')];
+        let errors = [];
+        data.forEach(input => {
+            console.warn('Input');
+            console.group();
+            console.log(input);
+            console.log('Nombre');
+            console.log(input.name);
+            console.log('Valor');
+            console.log(input.value);
+            console.groupEnd();
+            if (!input.checkValidity()) {
+                console.error(input.name + ' no Valida');
+                showInputErrors(input);
+                errors.push(input);
+            } else {
+                console.info(input.name + ' Valida!');
+                fd.set(input.name, input.value);
+            }
+        });
+        console.log(errors);
+        if (errors.length <= 0) {
+            asyncForm(fd);
+        }
+        ct_btn.removeAttribute('disabled');
+    });
+    const asyncForm = (formData) => {
+        fetch('/ct_mail/', { // a donde
+            method: 'post', // como
+            body: formData // que
+        })
+
+        .then((response) => {
+            if (response.status !== 200) {
+                throw new Error(response.status)
+            }
+            ct_btn.removeAttribute('disabled');
+            //Input Cleaner
+
+            ct_inputs.forEach(ct_input => {
+                resetInputErrors(ct_input);
+            });
+
+            // Modal -> Exito!
+            newModal(ct_padre , [
+            "@lang('modal.title')",
+            "@lang('modal.msg')",
+            "@lang('modal.disclamer')"
+            ]);
+            console.log(response);
+            console.log('Exito');
+        })
+
+        .catch( () => {
+            ct_btn.removeAttribute('disabled');
+            // Modal -> Falla!
+            newModal(ct_padre , [
+            "@lang('modal.fail')",
+            "@lang('modal.fail-msg')"
+            ]);
+            console.log('Falla');
+        })
+    }
+    const showInputErrors = (input) => {
+        input.value = input.validationMessage;
+        input.classList.remove('border-gris-800')
+        input.classList.add('border-red-600')
+        input.classList.add('text-red-600')
+    }
+    const resetInputErrors = (input) => {
+        input.value = '';
+        input.classList.add('border-gris-800')
+        input.classList.remove('border-red-600')
+        input.classList.remove('text-red-600')
+    }
+</script>
+</main>
 @endsection

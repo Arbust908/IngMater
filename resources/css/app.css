@@ -79,6 +79,9 @@
     }
 }
 
+[disabled] {
+    @apply bg-gris-400 text-black;
+}
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
