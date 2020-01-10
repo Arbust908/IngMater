@@ -7,7 +7,7 @@
     <article class="w-full text-center relative z-10 text-main-100 py-4">
         <h2 class="text-xxl font-bold uppercase flex items-center justify-center">
             {{ __('contact.title') }}
-            <a href="@lang('routes.iyd')" class="-ml-2">
+            <a href="https://www.linkedin.com/company/ingmater-consultores/" class="-ml-2">
                 <span class="fa-stack fa">
                     <i class="fas fa-square fa-stack-1x text-white"></i>
                     <i class="fab fa-linkedin fa-stack-1x"></i>
