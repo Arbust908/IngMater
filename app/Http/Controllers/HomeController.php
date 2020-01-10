@@ -98,19 +98,23 @@ class HomeController extends Controller
      */
     public function lang(Request $request)
     {
+        // dump(App::getLocale());
         $inputs = $request->all();
-        $lang = $inputs["languaje"];
-        //dump( $inputs["page"] );
-        //dump( __('routes.'.$inputs["page"], [], $lang) );
-        $page = __('routes.'.$inputs["page"], [], $lang);
+        //$lang = $inputs["languaje"];
+
+        // dump( __('routes.'.$inputs["page"]) );
+
+        $page = __('routes.'.$inputs["page"]);
+
+        /*
         $langs = ['en','es'];
         // dump( in_array($lang, $langs) );
         if( in_array($lang, $langs) ){
             App::setLocale($lang);
             Session::put('locale', $lang);
         }
-        //dd('Idioma '. $lang, 'Pagina '. $page, App::getLocale(), url( '/' . $page ));
-        if($page == '/') { return redirect( url( $page ) ); }
+        dd('Idioma '. $lang, 'Pagina '. $page, App::getLocale(), url( '/' . $page ));*/
+        if($page === '/') { return redirect( url( $page ) ); }
         return redirect( url( '/' . $page ) );
     }
 
