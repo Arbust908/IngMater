@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<main>
-    <section class="flex justify-center items-center relative pt-5 pb-6 bg-no-repeat bg-top bg-cover"
+<main class="md:flex md:flex-wrap md:justify-center">
+    <section class="flex justify-center items-center relative pt-5 pb-6 bg-no-repeat bg-top bg-cover md:w-full md:order-1 "
     style="background-image: url({{ url(__('contact.banner')) }});">
     <article class="w-full text-center relative z-10 text-main-100 py-4">
         <h2 class="text-xxl font-bold uppercase flex items-center justify-center">
@@ -16,7 +16,10 @@
         </h2>
     </article>
 </section>
-<section class="px-6 pt-5 mb-12">
+<section
+    class="px-6 pt-5 mb-12
+    md:order-3 md:pt-10 md:w-5/12 md:ml-20"
+>
     <h4 class="text-main-100 text-lg uppercase pb-2 border-b border-main-100 mb-8 font-bold">
         @lang('contact.form.title')
     </h4>
@@ -45,8 +48,8 @@
             </label>
             <textarea name="query" rows="12" contactinput class="border border-gris-800 py-2 px-4 rounded-xl w-full mb-4"></textarea>
         </fieldset>
-        <fieldset class="px-4 flex flex-col justify-center">
-            <div class="mb-10">
+        <div class="px-4 flex flex-col justify-center md:flex-row md:justify-between md:items-center">
+            <div class="mb-10 md:mb-0">
                 <button id="contact_check" class="font-bold text-main-100 pr-1">
                     <i class="far fa-square"></i>
                 </button>
@@ -55,10 +58,10 @@
                     @lang('contact.form.check')
                 </label>
             </div>
-            <button class="text-xl font-bold py-2 px-10 rounded-full bg-main-100 text-white mx-auto inline-block" id="contact-btn">
+            <button class="text-xl font-bold py-2 px-10 rounded-full bg-main-100 text-white mx-auto inline-block md:mr-0" id="contact-btn">
                 @lang('contact.form.btn')
             </button>
-        </fieldset>
+        </div>
         <script>
             const checkbox = document.getElementById('contact_check');
             const boxIcon = checkbox.querySelector('i.far');
@@ -74,8 +77,11 @@
         </script>
     </form>
 </section>
-<section class="px-6">
-    <h4 class="text-main-100 text-lg uppercase pb-2 border-b border-main-100 mb-8 font-bold">
+<section
+    class="px-6
+    md:order-2 md:pt-10 md:w-4/12 md:mr-20"
+>
+    <h4 class="text-main-100 text-lg uppercase pb-2 border-b border-main-100 mb-8 font-bold text-center">
         @lang('contact.map.title')
     </h4>
     <article class="flex flex-col justify-center font-bold text-main-200 text-center text-xl mb-6">
