@@ -3,7 +3,7 @@
 @section('content')
 <main class="md:flex md:flex-wrap md:justify-center">
     <section class="flex justify-center items-center relative pt-5 pb-6 bg-no-repeat bg-top bg-cover md:w-full md:order-1 "
-    style="background-image: url({{ url(__('contact.banner')) }});">
+    style="background-image: url({{ url(__('contact.banner')) }});" id="contact_bg">
     <article class="w-full text-center relative z-10 text-main-100 py-4">
         <h2 class="text-xxl font-bold uppercase flex items-center justify-center">
             {{ __('contact.title') }}
@@ -209,6 +209,22 @@
         input.classList.remove('border-red-600')
         input.classList.remove('text-red-600')
     }
+</script>
+<script>
+    const ct_bg = document.getElementById('contact_bg');
+    const ct_bgSrc = "{{ url(__('contact.banner')) }}";
+    const ct_bgSrcLg = ct_bgSrc.replace("sm", "lg");
+
+
+    const switchBG = () => {
+        if (window.innerWidth >= 768) {
+            ct_bg.style = "background-image: url("+ ct_bgSrcLg +");"
+        } else {
+            ct_bg.style = "background-image: url("+ ct_bgSrc +");"
+        }
+    }
+
+    window.onresize = switchBG();
 </script>
 </main>
 @endsection
