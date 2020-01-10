@@ -162,7 +162,7 @@
     });
     const asyncForm = (formData) => {
         fetch('/ct_mail/', { // a donde
-            method: 'post', // como
+            method: 'POST', // como
             body: formData // que
         })
 
