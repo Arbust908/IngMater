@@ -35,13 +35,13 @@
         event.preventDefault();
         nw_btn.setAttribute('disabled', true);
         let fd = new FormData();
-        // console.log(document.getElementById('newsletter').elements);
+        // // console.log(document.getElementById('newsletter').elements);
         const data = [...document.getElementById('newsletter').elements];
 
         data.forEach(input => {
-            // console.log(input);
-            // console.log(input.name);
-            // console.log(input.value);
+            // // console.log(input);
+            // // console.log(input.name);
+            // // console.log(input.value);
             fd.set(input.name, input.value);
         });
 
@@ -63,8 +63,8 @@
                 "@lang('modal.msg')",
                 "@lang('modal.disclamer')"
             ]);
-            console.log(response);
-            console.log('Exito');
+            // console.log(response);
+            // console.log('Exito');
         })
 
         .catch( () => {
@@ -74,7 +74,7 @@
                 "@lang('modal.fail')",
                 "@lang('modal.fail-msg')"
             ]);
-            console.log('Falla');
+            // console.log('Falla');
         })
     });
 </script>

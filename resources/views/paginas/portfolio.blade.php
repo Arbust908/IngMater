@@ -21,26 +21,26 @@
 <script>
 
     let logos = document.querySelectorAll('img.client-logo');
-    // console.log(logos);
+    // // console.log(logos);
 
     const setWidth = (elem) => {
-        // console.group();
-        // console.log(elem);
-        // console.log();
+        // // console.group();
+        // // console.log(elem);
+        // // console.log();
 
         let sm_width = elem.dataset.limits.split('-')[0];
         let lg_width = elem.dataset.limits.split('-')[1];
 
-        // console.log(sm_width);
-        // console.log(lg_width);
-        // console.log(window.innerWidth);
+        // // console.log(sm_width);
+        // // console.log(lg_width);
+        // // console.log(window.innerWidth);
 
         if (window.innerWidth >= 768) {
             elem.width = lg_width;
         } else {
             elem.width = sm_width;
         }
-        // console.groupEnd();
+        // // console.groupEnd();
     }
 
     const renderLogos = () => {

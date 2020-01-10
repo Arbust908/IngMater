@@ -119,7 +119,6 @@
     const ct_inputs = document.querySelectorAll('[contactinput]');
     const ct_csrf = document.querySelector('[name="_token"]');
 
-    console.info(ct_inputs);
     ct_inputs.forEach(ct_input => {
         ct_input.addEventListener('focus', () => {
             if( ct_input.classList.contains('border-red-600') ) {
@@ -133,28 +132,28 @@
         let fd = new FormData();
         const ct_csrf = document.querySelector('[name="_token"]');
         fd.set(ct_csrf.name, ct_csrf.value);
-        console.log(document.getElementById('newsletter').elements);
+        // console.log(document.getElementById('newsletter').elements);
         const data = [...document.querySelectorAll('[contactinput]')];
         let errors = [];
         data.forEach(input => {
-            console.warn('Input');
-            console.group();
-            console.log(input);
-            console.log('Nombre');
-            console.log(input.name);
-            console.log('Valor');
-            console.log(input.value);
-            console.groupEnd();
+            // console.warn('Input');
+            // console.group();
+            // console.log(input);
+            // console.log('Nombre');
+            // console.log(input.name);
+            // console.log('Valor');
+            // console.log(input.value);
+            // console.groupEnd();
             if (!input.checkValidity()) {
-                console.error(input.name + ' no Valida');
+                // console.error(input.name + ' no Valida');
                 showInputErrors(input);
                 errors.push(input);
             } else {
-                console.info(input.name + ' Valida!');
+                // console.info(input.name + ' Valida!');
                 fd.set(input.name, input.value);
             }
         });
-        console.log(errors);
+        // console.log(errors);
         if (errors.length <= 0) {
             asyncForm(fd);
         }
@@ -183,8 +182,8 @@
             "@lang('modal.msg')",
             "@lang('modal.disclamer')"
             ]);
-            console.log(response);
-            console.log('Exito');
+            // console.log(response);
+            // console.log('Exito');
         })
 
         .catch( () => {
@@ -194,7 +193,7 @@
             "@lang('modal.fail')",
             "@lang('modal.fail-msg')"
             ]);
-            console.log('Falla');
+            // console.log('Falla');
         })
     }
     const showInputErrors = (input) => {
