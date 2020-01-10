@@ -1484,7 +1484,7 @@
             "version": "v4.3.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/// console.git",
+                "url": "https://github.com/symfony/console.git",
                 "reference": "831424efae0a1fe6642784bd52aae14ece6538e6"
             },
             "dist": {

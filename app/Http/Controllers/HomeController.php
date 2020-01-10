@@ -118,7 +118,7 @@ class HomeController extends Controller
     public function newsletterMailer(Request $request)
     {
         $email = $request->input('email');
-        Mail::to('contacto@ingmater.com')->queue(new NewsletterMailer($email));
+        Mail::to('arbust908@gmail.com')->queue(new NewsletterMailer($email));
         // --
         //return view('mails.mail');
         return response()->json(['email' => $email], 200);
@@ -129,13 +129,13 @@ class HomeController extends Controller
     {
         $mailData = [
             'name' => $request->input('name'),
-            'empresa' => $request->input('empresa'),
+            'empresa' => $request->input('company'),
             'email' => $request->input('email'),
-            'telefono' => $request->input('telefono'),
+            'telefono' => $request->input('phone'),
             'msg' => $request->input('msg'),
         ];
-        Mail::to('contacto@ingmater.com')->queue(new ContactMailer($mailData));
+        Mail::to('arbust908@gmail.com')->queue(new ContactMailer($mailData));
         // --
-        return view('mails.mail');
+        return response()->json(['email' => $mailData['email']], 200);
     }
 }
