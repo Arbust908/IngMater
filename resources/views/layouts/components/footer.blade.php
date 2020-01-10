@@ -23,7 +23,7 @@
         <ul class="font-bold uppercase text-main-200 text-sm md:flex md:flex-wrap md:justify-center">
             <li class="py-1 text-base md:w-full">Villa Ballester (Buenos Aires)</li>
             <li class="py-1 text-base md:w-1/2">Rosario (Santa Fe)</li>
-            <li class="py-1 text-base md:w-1/2">Bariloche (Río Nregro)</li>
+            <li class="py-1 text-base md:w-1/2">Bariloche (Río Negro)</li>
         </ul>
         <small class="text-sm text-gray-700 flex justify-center items-center font-bold pt-4"> <img class="w-3 h-3 mr-1" src="/img/copyright-regular.svg"> Copyright 2019 Ingmater </small>
     </section>
