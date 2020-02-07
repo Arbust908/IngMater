@@ -5,7 +5,7 @@ return [
     'banner' => '/img/template.jpg',
     'cajas' => [
         [
-            'title' => 'INSPECCIÓN EN SOLDADURA',
+            'title' => 'Inspección de soldaduras',
             'desc' => [
                 'Calificación de procedimientos y soldadores.',
                 'Redacción de procedimientos de soldadura.',

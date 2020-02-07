@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => '¿Quienes Somos?',
-    'subtitle' => 'Somos un equipo de ingenieros, con amplia experiencia y conocimientos en ingeniería y ciencia de los materiales, el cual brinda asistencia técnica y servicios de consultoría para el sector industrial. Creemos firmemente que a través de una ágil y dinámica cooperación con las industrias, estás podrán optimizar la calidad y eficiencia de sus sistemas productivos y servicios.',
+    'title' => 'Quienes Somos',
+    'subtitle' => 'Somos un equipo de ingenieros, con amplia experiencia y conocimientos en ingeniería y ciencia de los materiales, el cual brinda asistencia técnica y servicios de consultoría para el sector industrial. Creemos firmemente que a través de una ágil y dinámica cooperación con las industrias, estas podrán optimizar la calidad y eficiencia de sus sistemas productivos y servicios.',
     'subtitle2' => 'Nos visualizamos como referentes regionales en el ámbito de la optimización, mejora y desarrollo de procesos industriales. Queremos que se nos reconozca por nuestro valor agregado, soluciones de problemas a medida y la generación de recursos humanos técnicamente calificados.',
     'banner' => '/img/who.jpg',
     'experiances' => [

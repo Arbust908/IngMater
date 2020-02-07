@@ -7,10 +7,10 @@
     <article class="w-full text-center relative z-10 text-main-100 py-4">
         <h2 class="text-xxl font-bold uppercase flex items-center justify-center">
             {{ __('contact.title') }}
-            <a href="https://www.linkedin.com/company/ingmater-consultores/" class="-ml-2">
-                <span class="fa-stack fa">
-                    <i class="fas fa-square fa-stack-1x text-white"></i>
-                    <i class="fab fa-linkedin fa-stack-1x"></i>
+            <a href="https://www.linkedin.com/company/ingmater-consultores/" target="_blank" class="-ml-2">
+                <span class="group fa-stack fa transition">
+                    <i class="fas fa-square fa-stack-1x text-white group-hover:text-main-200"></i>
+                    <i class="fab fa-linkedin fa-stack-1x group-hover:text-white"></i>
                 </span>
             </a>
         </h2>
@@ -47,7 +47,7 @@
                 @lang('contact.form.area')
                 <span class="text-red-500">*</span>
             </label>
-            <textarea name="query" rows="12" contactinput class="border border-gris-800 py-2 px-4 rounded-xl w-full mb-4"></textarea>
+            <textarea name="query" rows="12" contactinput validationMessage="Tenes que completar el campo" class="border border-gris-800 py-2 px-4 rounded-xl w-full mb-4"></textarea>
         </fieldset>
         <div class="px-4 flex flex-col justify-center md:flex-row md:justify-between md:items-center">
             <div class="mb-10 md:mb-0">
@@ -110,7 +110,7 @@
         </p>
     </article>
     <article class="pb-12">
-        <img src="/img/mapa-contact.png" alt="@lang('contact.map.imgAlt')">
+        <img src="/img/mapa-contact.png" alt="@lang('contact.map.imgAlt')" class="rounded-lg shadow">
     </article>
 </section>
 <script name="ct_script">
@@ -153,6 +153,15 @@
                 fd.set(input.name, input.value);
             }
         });
+        const textArea = document.querySelector('textarea[contactinput]')
+        if (textArea.value.length <= 0) {
+                console.error(textArea.name + ' no Valida');
+                showInputErrors(textArea);
+                errors.push(textArea);
+            } else {
+                console.info(textArea.name + ' Valida!');
+                fd.set(textArea.name, textArea.value);
+            }
         // console.log(errors);
         if (errors.length <= 0) {
             asyncForm(fd);
@@ -197,7 +206,8 @@
         })
     }
     const showInputErrors = (input) => {
-        input.value = input.validationMessage;
+        console.info(input.name);
+        input.value = input.name === 'query' ? 'Completa el campo con tu consulta' : input.validationMessage;
         input.classList.remove('border-gris-800')
         input.classList.add('border-red-600')
         input.classList.add('text-red-600')

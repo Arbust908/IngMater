@@ -15,14 +15,14 @@ return [
         [
             'name' => 'Gestamp S.A.',
             'logo' => '/img/gestampsa_logo.png',
-            'logo-limits' => '140-221',
+            'logo-limits' => '120-150',
             'desc' => 'Caracterización y análisis de falla en línea de montaje de chapas de Acero Galvanizado para conformado en frío de autopartes.',
             'img' => '/img/gestampsa.jpg',
         ],
         [
             'name' => 'Exal S.A.',
             'logo' => '/img/exalsa_logo.png',
-            'logo-limits' => '120-190',
+            'logo-limits' => '120-150',
             'desc' => 'Caracterización microestructural y mecánica de aleación de alumino a lo largo de las distintas etapas de la fabricación de un envase mediante extrusión por impacto.',
             'img' => '/img/exalsa.jpg',
         ],

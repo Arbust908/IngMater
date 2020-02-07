@@ -57,10 +57,21 @@ class HomeController extends Controller
      *
      * @return View
      */
+    public function contact()
+    {
+        return view('paginas.contact');
+    }
+
+
+    /**
+     * Nos lleva a la vista de Quienes Somos
+     *
+     * @return View
+     */
     public function inspects()
     {
-        return view('paginas.inspects');
-
+        $name = 'inspects';
+        return $this->servePilar($name);
     }
 
     /**
@@ -70,17 +81,8 @@ class HomeController extends Controller
      */
     public function iyd()
     {
-        return view('paginas.iyd');
-    }
-
-    /**
-     * Nos lleva a la vista de Quienes Somos
-     *
-     * @return View
-     */
-    public function contact()
-    {
-        return view('paginas.contact');
+        $name = 'iyd';
+        return $this->servePilar($name);
     }
 
     /**
@@ -90,7 +92,17 @@ class HomeController extends Controller
      */
     public function cyc()
     {
-        return view('paginas.cyc');
+        $name = 'cyc';
+        return $this->servePilar($name);
+    }
+
+    /**
+     * Sirve la pagina de pilar con lo necesario
+     */
+    private function servePilar($pilar)
+    {
+        return view('paginas.pilars')
+            ->with('pilar', $pilar);
     }
 
     /**

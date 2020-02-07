@@ -1,27 +1,27 @@
 <nav id="desktop_nav_bar" class="hidden md:block lg:text-lg">
     <ul class="flex text-center text-main-100 uppercase font-bold font-sans w-full justify-around items center">
-        <li class="py-1 pr-2 flex items-center">
-            <a href="{{ url(__('routes.who')) }}">
+        <li class="flex items-center">
+            <a  class="px-2 py-6 border-b-2 border-transparent hover:border-main-200" href="{{ url(__('routes.who')) }}">
                 @lang('who.title')
             </a>
         </li>
-        <li class="py-1 pr-2 flex items-center">
-            <a href="{{ url(__('routes.portfolio')) }}">
+        <li class="flex items-center">
+            <a  class="px-2 py-6 border-b-2 border-transparent hover:border-main-200" href="{{ url(__('routes.portfolio')) }}">
                 @lang('portfolio.title')
             </a>
         </li>
-        <li class="py-1 pr-2 flex items-center">
-            <a href="{{ url(__('routes.contact')) }}">
+        <li class="flex items-center">
+            <a  class="px-2 py-6 border-b-2 border-transparent hover:border-main-200" href="{{ url(__('routes.contact')) }}">
                 @lang('contact.title')
             </a>
         </li>
-        <li class="py-1 pr-2 flex items-center lg:text-xl">
-            <a href="https://www.linkedin.com/company/ingmater-consultores/">
-                <i class="fab fa-linkedin"></i>
+        <li class="flex items-center lg:text-xl">
+            <a class="group px-2 py-6 text-xxl"  href="https://www.linkedin.com/company/ingmater-consultores/" target="_blank">
+                <i class="fab fa-linkedin px-2 py-1 rounded group-hover:shadow-lg group-hover:text-gray-600 transition"></i>
             </a>
         </li>
-        <li class="py-1 pr-2 flex items-center relative">
-            <a id="desktop_nav_lang_changer" class="w-full flex justify-center items-center">
+        <li class="flex items-center relative">
+            <a id="desktop_nav_lang_changer" class="w-full px-3 py-2 rounded flex justify-center items-center cursor-pointer border border-transparent hover:shadow-xl hover:border-gray-200">
                 @lang('nav.change_lang')
                 <i class="fas fa-chevron-down flex items-center transition px-2" data-state='closed'></i>
             </a>

@@ -1,8 +1,10 @@
 <nav class="w-11/12 shadow-md bg-white absolute top-0 min-h-screen out-left transition z-50" id="mobile_nav_bar">
     <ul class="w-9/12 mr-5 my-5 ml-auto text-center text-main-100 uppercase font-bold font-sans">
         <i class="far fa-times absolute top-0 right-0 pt-4 pr-4 hover:text-red-600" id="mobile_nav_close"></i>
-        <li class="border-b border-gris-500 py-3">
-            <img src="/img/logo.png" alt="Logo de IngMater" width='100px' title="INGMATER" class="mx-auto">
+        <li class="border-b border-gris-500 py-3 mb-2">
+            <a href="@lang('routes.home')">
+                <img src="/img/logo.png" alt="Logo de IngMater" width='100px' title="INGMATER" class="mx-auto">
+            </a>
         </li>
         <li class="border-b border-gris-500 py-3">
             <a href="{{ url(__('routes.who')) }}">
@@ -20,19 +22,20 @@
             </a>
         </li>
         <li class="border-b border-gris-500 py-3">
-            <a href="https://www.linkedin.com/company/ingmater-consultores/">
+            <a href="https://www.linkedin.com/company/ingmater-consultores/" target="_blank">
                 Linkedin <i class="fab fa-linkedin"></i>
             </a>
         </li>
         <li class="border-b border-gris-500 py-3 ">
             <a id="mobile_nav_lang_changer" class="relative w-full inline-block ">
-                @lang('nav.change_lang')
+                @lang('nav.changer')
                 <i class="fas fa-chevron-down absolute top-0 bottom-0 right-0  flex items-center transition" data-state='closed'></i>
                 {{-- Armar DropDown con lenguaje --}}
                 {{-- @lang('lang.lang') --}}
             </a>
-            <button onclick="event.preventDefault();document.getElementById('lang-change-mob').submit();" class="hidden w-full py-3 mt-2 rounded shadow" id="mobile_nav_other_lang">
-                @lang('lang.fullOther')
+            <button onclick="event.preventDefault();document.getElementById('lang-change-mob').submit();" class="hidden w-full py-3 mt-2 rounded shadow flex items-center justify-center" id="mobile_nav_other_lang">
+                @lang('nav.other.flag')
+                <span class="px-4">@lang('nav.other.name')</span>
             </button>
         </li>
         <form id="lang-change-mob" action="{{ route('lang') }}" method="POST" class="hidden">

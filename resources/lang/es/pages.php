@@ -2,7 +2,7 @@
 
 return [
     'home' => 'Inicio',
-    'who' => '¿Quienes somos?',
+    'who' => 'Quienes somos',
     'portfolio' => 'Portfolio',
     'inspects' => 'Inspecciones',
     'iyd' => 'ingenieria-y-desarrollo',

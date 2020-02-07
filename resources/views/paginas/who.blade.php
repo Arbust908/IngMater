@@ -9,11 +9,11 @@
             @lang('who.title')
         </h1>
     </div>
-    <section class="font-bold mt-6 mb-8 lg:px-20 hidden md:flex justify-between">
-        <p class="w-4/12 text-white text-base text-center leading-normal">
+    <section class="font-bold text-lg mt-6 mb-8 lg:px-20 hidden md:flex justify-between">
+        <p class="w-4/12 text-white text-center leading-normal">
             @lang('who.subtitle')
         </p>
-        <p class="w-4/12 text-white text-base text-center leading-normal">
+        <p class="w-4/12 text-white text-center leading-normal">
             @lang('who.subtitle2')
         </p>
     </section>
@@ -80,7 +80,7 @@ var WSCF = new Flickity( '#who_sub_carousel', {
   prevNextButtons: false,
   wrapAround: true,
   autoPlay: true,
-  adaptiveHeight: true,
+  adaptiveHeight: false,
   watchCSS: true
 });
 
@@ -91,7 +91,7 @@ var WEF = new Flickity( '#who_exps', {
   prevNextButtons: false,
   wrapAround: true,
   autoPlay: true,
-  adaptiveHeight: true,
+  adaptiveHeight: false,
   watchCSS: true
 });
 </script>

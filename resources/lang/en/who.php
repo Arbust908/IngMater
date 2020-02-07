@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Who are we?',
+    'title' => 'Who are we',
     'subtitle' => 'We are a team of engineers, with extensive experience and knowledge in engineering and materials science, which provides technical assistance and consulting services for the industrial sector. We firmly believe that through an agile and dynamic cooperation with industries, they will be able to optimize the quality and efficiency of their production systems and services.',
     'subtitle2' => 'We visualize ourselves as regional referents in the field of optimization, improvement and development of industrial processes. We want to be recognized for our added value, tailored problem solutions and the generation of technically qualified human resources.',
     'banner' => '/img/who.jpg',
@@ -20,7 +20,7 @@ return [
         'mail' => 'contacto@ingmater.com',
         'hq' => [
             'location' => 'Buenos Aires',
-            'phone' => 'Cell phone: +54 9 11 5953-9770'
+            'phone' => 'Cel: +54 9 11 5953-9770'
         ],
     ],
     'reviews' => [

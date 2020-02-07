@@ -15,14 +15,14 @@ return [
         [
             'name' => 'Gestamp S.A.',
             'logo' => '/img/gestampsa_logo.png',
-            'logo-limits' => '140-221',
+            'logo-limits' => '120-150',
             'desc' => 'Characterization and assembly line failure analysis of galvanized steel sheet for cold forming of auto parts.',
             'img' => '/img/gestampsa.jpg',
         ],
         [
             'name' => 'Exal S.A.',
             'logo' => '/img/exalsa_logo.png',
-            'logo-limits' => '120-190',
+            'logo-limits' => '120-150',
             'desc' => 'Microstructural and mechanical characterization of aluminum alloy throughout the different stages of the manufacture of a container by impact extrusion.',
             'img' => '/img/exalsa.jpg',
         ],
