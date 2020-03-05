@@ -27,9 +27,9 @@ return [
         'title' => 'OUR CLIENTS SAY:',
         'cards' => [
                 'logo' => '/img/gestampsa_logo.png',
-                'review' => 'Due to the complexity of the industrial processes developed by GESTAMP, finding the solution to many of the day-to-day problems requires a high level of technicality and specific knowledge. That is why, having breakage failures when stamping sheet metal, a higher analysis was required than can be obtained from a simple laboratory test.
+                'review' => 'Due to the complexity of the industrial processes developed by GESTAMP, finding the solution to many of the day-to-day problems requires a high level of technicality and specific knowledge. Therefore, we decide to work with INGMATER. Together we analyzed the sheet metal stamping process and decided the tests that were necessary in order to assess the aptitude of the raw material.
                 <br>
-                That is why we made the decision to work with INGMATER. Together with them we analyze the process in plant to make the decision of what types of tests were going to undergo the raw material. Once they obtained the results of the analyzes and having studied our processes, they generated a report, focusing on those points that are relevant for obtaining good pieces, arguing with solid theoretical bases their observations.',
+                From these results and its subsequent analysis, INGMATER delivered a technical report focusing on those points that are relevant for obtaining suitable parts, arguing with solid theoretical bases their remarks.',
                 'author' => 'Tomas Bird Mosconi',
                 'job' => 'PROCESS ENGINEERING'
         ]

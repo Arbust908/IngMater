@@ -27,10 +27,11 @@ return [
         'title' => 'Nuestros clientes dicen:',
         'cards' => [
             [
-                'logo' => '',
-                'review' => 'Debido a la complejidad de los procesos industriales desarrollados por GESTAMP, encontrar la solución a muchos de los problemas del día a día requiere un alto nivel de tecnicismo y conocimientos específicos. Fue por ello que al tener fallas de roturas a la hora de estampar chapa metálica, se requería un análisis superior al que se puede obtener de un simple ensayo de laboratorio.
-                    <br>
-                    Fue por esto que tomamos la decisión de trabajar con INGMATER. En conjunto con ellos analizamos el proceso en planta para tomar la decisión de a qué tipos de ensayos se iba a someter a la materia prima. Una vez que obtuvieron los resultados de los análisis y habiendo estudiado nuestros procesos, generaron un informe, haciendo foco en aquellos puntos que son relevantes para la obtención de piezas buenas, argumentando con bases teóricas sólidas sus observaciones.',
+                'logo' => '/img/gestampsa_logo.png',
+                'review' => 'Debido a la complejidad de los procesos industriales desarrollados por GESTAMP,  encontrar la solución a muchos de los problemas del día a día requiere un alto nivel de tecnicismo y conocimientos específicos. Por lo cual, tomamos la decisión de trabajar con INGMATER. En conjunto con ellos se analizó el proceso de estampado de chapa y se determinaron los ensayos a los cuales se iba a  someter a la materia prima para evaluar su aptitud. 
+                <br>
+                A partir de estos resultados y su posterior análisis, INGMATER nos entregó un informe técnico haciendo foco en aquellos puntos que son relevantes para la obtención de piezas sanas, argumentando con bases teóricas sólidas sus observaciones.
+                ',
                 'author' => 'Tomas Bird Mosconi',
                 'job' => 'INGENIERÍA DE PROCESOS'
             ],

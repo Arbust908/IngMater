@@ -3,8 +3,8 @@
 @section('content')
 <div class="flex flex-col">
     <section
-        class="md:h-64 w-full px-2 py-12 bg-left-top bg-cover bg-repeat md:bg-center"
-        style="background-image: url({{ url(__('portfolio.banner')) }});">
+        class="md:h-64 w-full px-2 py-12 bg-left-top bg-cover bg-repeat md:bg-center js-portfolio_banner"
+        style="background-image: url({{ url('img/portfolio_mobile.png') }});">
         <div class="flex flex-col lg:justify-center text-white text-center md:w-1/2 md:mr-auto lg:h-full">
             <h1 class="font-bold leading-normal text-xxl uppercase lg:text-xxxl lg:text-left lg:pl-40">
                 @lang('portfolio.title')
@@ -55,5 +55,21 @@
     })
 
 
+</script>
+<script defer>
+    let portfolio_banner = document.querySelector('.js-portfolio_banner');
+    const swapImgHome = (element) => {
+        if (window.innerWidth > 768) {
+            element.style.backgroundImage = "url({{ url('img/portfolio.png') }})";
+        } else {
+            element.style.backgroundImage = "url({{ url('img/portfolio_mobile.png') }})";
+        }
+    }
+    window.addEventListener('load', () => {
+        swapImgHome(portfolio_banner);
+    })
+    window.addEventListener('resize', () => {
+        swapImgHome(portfolio_banner);
+    })
 </script>
 @endsection

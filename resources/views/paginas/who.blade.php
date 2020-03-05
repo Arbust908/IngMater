@@ -2,8 +2,8 @@
 
 @section('content')
 <section
-    class="h-64 md:h-full w-full px-2 py-12 bg-cover bg-center"
-    style="background-image: url({{ url(__('who.banner')) }});">
+    class="h-64 md:h-full w-full px-2 py-12 bg-cover bg-center js-who_banner"
+    style="background-image: url({{ url('img/who_mobile.png') }});">
     <div class="flex flex-col lg:justify-center text-center">
         <h1 class="font-bold text-main-100 leading-normal text-xl uppercase lg:text-xxxl md:mb-8 lg:mb-16">
             @lang('who.title')
@@ -94,5 +94,21 @@ var WEF = new Flickity( '#who_exps', {
   adaptiveHeight: false,
   watchCSS: true
 });
+</script>
+<script defer>
+    let who_banner = document.querySelector('.js-who_banner');
+    const swapImgHome = (element) => {
+        if (window.innerWidth > 768) {
+            element.style.backgroundImage = "url({{ url('img/who.png') }})";
+        } else {
+            element.style.backgroundImage = "url({{ url('img/who_mobile.png') }})";
+        }
+    }
+    window.addEventListener('load', () => {
+        swapImgHome(who_banner);
+    })
+    window.addEventListener('resize', () => {
+        swapImgHome(who_banner);
+    })
 </script>
 @endsection

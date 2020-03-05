@@ -8,7 +8,6 @@
             <a href="@lang('routes.inspects')" class="absolute right-0 top-0 p-4 z-30">
                 <i class="fas fa-chevron-right "></i>
             </a>
-            <div class="absolute inset-0 z-0 w-full h-full bg-gris-200 opacity-25"></div>
         </article>
         <article class="w-full text-center relative z-10 text-white py-4 hidden md:flex md:justify-center md:items-center">
             <div class="relative z-20 inline-block">
@@ -27,9 +26,8 @@
                     {{ __('home.cards.cyc.title') }}
                 </a>
             </h2>
-            <div class="absolute inset-0 z-0 w-full h-full bg-gris-200 opacity-25"></div>
         </article>
-        <img src="@lang(''.$pilar.'.banner')" alt="" class="absolute inset-0 z-0 w-full h-full object-cover">
+        <img src="{{ url('img/template_mobile.png') }}" alt="" class="absolute inset-0 z-0 w-full h-full object-cover js-template_banner">
     </section>
     <section class="p-8 md:px-48">
         @foreach (__($pilar.'.cajas') as $caja)
@@ -45,4 +43,20 @@
         @endforeach
     </section>
 </main>
+<script defer>
+    let template_banner = document.querySelector('.js-template_banner');
+    const swapImgHome = (element) => {
+        if (window.innerWidth > 768) {
+            element.style.backgroundImage = "url({{ url('img/template.png') }})";
+        } else {
+            element.style.backgroundImage = "url({{ url('img/template_mobile.png') }})";
+        }
+    }
+    window.addEventListener('load', () => {
+        swapImgHome(template_banner);
+    })
+    window.addEventListener('resize', () => {
+        swapImgHome(template_banner);
+    })
+</script>
 @endsection

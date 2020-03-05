@@ -3,9 +3,9 @@
 @section('content')
 <main class="md:flex md:flex-wrap md:justify-center">
     <section class="flex justify-center items-center relative pt-5 pb-6 bg-no-repeat bg-top bg-cover md:w-full md:order-1 "
-    style="background-image: url({{ url(__('contact.banner')) }});" id="contact_bg">
+    style="background-image: url({{ url('img/contacto_mobile.png') }});" id="contact_bg">
     <article class="w-full text-center relative z-10 text-main-100 py-4">
-        <h2 class="text-xxl font-bold uppercase flex items-center justify-center">
+        <h2 class="text-xxl font-bold uppercase flex items-center justify-center md:w-10/12 md:mx-auto md:justify-start md:text-xxxl md:py-6">
             {{ __('contact.title') }}
             <a href="https://www.linkedin.com/company/ingmater-consultores/" target="_blank" class="-ml-2">
                 <span class="group fa-stack fa transition">
