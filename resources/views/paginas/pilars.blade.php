@@ -16,16 +16,27 @@
             <h2 class="relative z-20 text-xxxl px-8 border-r-2 border-gris-600 h-16 flex items-center">
                 {{ __('home.cards.'.$pilar.'.title') }}
             </h2>
+            @if($pilar !== 'inspects')
             <h2 class="relative z-20 text-xxl text-gris-600 px-8 border-r-2 border-gris-600 h-16 flex items-center">
                 <a href="@lang('routes.inspects')">
                     {{ __('home.cards.inspects.title') }}
                 </a>
             </h2>
-            <h2 class="relative z-20 text-xxl text-gris-600 px-8 h-16 flex items-center">
+            @endif
+            @if($pilar !== 'cyc')
+            <h2 class="relative z-20 text-xxl text-gris-600 px-8 h-16 flex items-center {{ $pilar === 'inspects' ? 'border-r-2 border-gris-600' : null}}">
                 <a href="@lang('routes.cyc')">
                     {{ __('home.cards.cyc.title') }}
                 </a>
             </h2>
+            @endif
+            @if($pilar !== 'iyd')
+            <h2 class="relative z-20 text-xxl text-gris-600 px-8 h-16 flex items-center">
+                <a href="@lang('routes.iyd')">
+                    {{ __('home.cards.iyd.title') }}
+                </a>
+            </h2>
+            @endif
         </article>
         <img src="{{ url('img/template_mobile.png') }}" alt="" class="absolute inset-0 z-0 w-full h-full object-cover js-template_banner">
     </section>

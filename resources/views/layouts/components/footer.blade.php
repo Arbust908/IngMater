@@ -18,8 +18,10 @@
         </form>
     </section>
     <section class="flex flex-col justify-center pt-10 px-2 text-center md:order-1 md:w-1/3 md:flex-row md:flex-wrap md:pt-2">
-        <img src="/img/map-marker-alt-solid.svg" alt="Icono de posicion" class="mx-auto md:w-1/12 md:mr-3 md:ml-0" style="max-width: 22px">
-        <h4 class="uppercase text-main-200 text-lg py-3 font-bold ">Argentina</h4>
+        <article class="w-full flex flex-col md:flex-row md:justify-center md:items-center">
+            <img src="/img/map-marker-alt-solid.svg" alt="Icono de posicion" class="mx-auto md:w-1/12 md:mr-3 md:ml-0" style="max-width: 22px">
+            <h4 class="uppercase text-main-200 text-lg py-3 font-bold ">Argentina</h4>
+        </article>
         <ul class="font-bold uppercase text-main-200 text-sm md:flex md:flex-wrap md:justify-center md:items-center">
             <li class="py-1 text-base md:text-sm md:w-full">Villa Ballester (Buenos Aires)</li>
             <li class="py-1 text-base md:text-sm md:w-5/12 md:text-right">Rosario (Santa Fe)</li>
