@@ -21,10 +21,10 @@
         <img src="/img/map-marker-alt-solid.svg" alt="Icono de posicion" class="mx-auto md:w-1/12 md:mr-3 md:ml-0" style="max-width: 22px">
         <h4 class="uppercase text-main-200 text-lg py-3 font-bold ">Argentina</h4>
         <ul class="font-bold uppercase text-main-200 text-sm md:flex md:flex-wrap md:justify-center md:items-center">
-            <li class="py-1 text-base md:w-full">Villa Ballester (Buenos Aires)</li>
-            <li class="py-1 text-base md:w-5/12 md:text-right">Rosario (Santa Fe)</li>
+            <li class="py-1 text-base md:text-sm md:w-full">Villa Ballester (Buenos Aires)</li>
+            <li class="py-1 text-base md:text-sm md:w-5/12 md:text-right">Rosario (Santa Fe)</li>
             <span class="hidden md:inline px-2">-</span>
-            <li class="py-1 text-base md:w-5/12 md:text-left">Bariloche (Río Negro)</li>
+            <li class="py-1 text-base md:text-sm md:w-5/12 md:text-left">Bariloche (Río Negro)</li>
         </ul>
         <small class="text-sm text-gray-700 flex justify-center items-center font-bold pt-4"> <img class="w-3 h-3 mr-1" src="/img/copyright-regular.svg"> Copyright 2019 Ingmater </small>
     </section>
