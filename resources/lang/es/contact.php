@@ -27,7 +27,7 @@ return [
         'imgAlt' => 'Mapa de todas nuestras Sedes'
     ],
     'form' => [
-        'title' => 'Comunicate con nostros',
+        'title' => 'Comunicate con nosotros',
         'inputs' => [
             [
                 'label' => 'Nombre y apellido:',
