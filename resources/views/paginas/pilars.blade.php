@@ -4,10 +4,27 @@
 <main>
     <section class="flex justify-center items-center relative pt-16 pb-12">
         <article class="w-full text-center relative z-10 text-white py-4 md:hidden">
-            <h2 class="relative z-20">{{ __($pilar.'.title') }}</h2>
-            <a href="@lang('routes.inspects')" class="absolute right-0 top-0 p-4 z-30">
-                <i class="fas fa-chevron-right "></i>
+            @if($pilar === 'inspects')
+            <a href="@lang('routes.iyd')" class="absolute left-0 top-0 p-4 z-30">
+                <i class="fas fa-chevron-left"></i>
             </a>
+            @endif
+            @if($pilar === 'cyc')
+            <a href="@lang('routes.inspects')" class="absolute left-0 top-0 p-4 z-30">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+            @endif
+            <h2 class="relative z-20">{{ __($pilar.'.title') }}</h2>
+            @if($pilar === 'iyd')
+            <a href="@lang('routes.inspects')" class="absolute right-0 top-0 p-4 z-30">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            @endif
+            @if($pilar === 'inspects')
+            <a href="@lang('routes.cyc')" class="absolute right-0 top-0 p-4 z-30">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            @endif
         </article>
         <article class="w-full text-center relative z-10 text-white py-4 hidden md:flex md:justify-center md:items-center">
             <div class="relative z-20 inline-block">
@@ -46,7 +63,7 @@
             <h3 class="text-main-200 font-bold pb-4 md:order-1 md:w-full lg:text-xxl uppercase">{{ $caja['title'] }}</h3>
             <ul class="text-gris-800 pb-2 md:order-3 md:rounded-xl md:shadow md:p-6 md:w-7/12 md:flex md:flex-col md:justify-center lg:text-lg">
                 @foreach ($caja['desc'] as $item)
-                <li class="pb-2 text-center"><span class="pr-3 hidden md:inline-block">-</span>{{ $item }}</li>
+                <li class="pb-3 text-center leading-normal"><span class="pr-3 hidden md:inline-block">-</span>{{ $item }}</li>
                 @endforeach
             </ul>
             <img src="{{ $caja['image'] }}" alt="" class="w-full h-48 object-cover md:order-2 md:w-4/12 rounded-xl">
