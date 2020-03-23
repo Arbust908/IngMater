@@ -20,7 +20,7 @@ return [
         'mail' => 'contacto@ingmater.com',
         'hq' => [
             'location' => 'Buenos Aires',
-            'phone1' => 'Cel: +54 9 11 5953-9770'
+            'phone' => 'Cel: +54 9 11 5953-9770'
         ],
     ],
     'reviews' => [
