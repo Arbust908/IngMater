@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'inputValidation' => 'Complete this field',
+    'queryValidation' => 'Complete the field with your query',
 
     /*
     |--------------------------------------------------------------------------

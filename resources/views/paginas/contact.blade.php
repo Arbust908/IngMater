@@ -207,7 +207,7 @@
     }
     const showInputErrors = (input) => {
         console.info(input.name);
-        input.value = input.name === 'query' ? 'Completa el campo con tu consulta' : input.validationMessage;
+        input.value = input.name === 'query' ? "@lang('validation.queryValidation')" : "@lang('validation.inputValidation')";
         input.classList.remove('border-gris-800')
         input.classList.add('border-red-600')
         input.classList.add('text-red-600')

@@ -1,7 +1,8 @@
 <?php
 
 return [
-
+    'inputValidation' => 'Completa este campo',
+    'queryValidation' => 'Completa el campo con tu consulta',
     /*
     |--------------------------------------------------------------------------
     | Validation Language Lines
