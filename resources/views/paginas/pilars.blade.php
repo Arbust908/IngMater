@@ -60,10 +60,13 @@
     <section class="p-8 md:px-48">
         @foreach (__($pilar.'.cajas') as $caja)
         <article class="flex flex-col mb-12 md:flex-row md:flex-wrap md:justify-between">
-            <h3 class="text-main-200 font-bold pb-4 md:order-1 md:w-full lg:text-xxl uppercase">{{ $caja['title'] }}</h3>
+            <h3 class="text-main-200 font-bold pb-4 md:order-1 md:w-full lg:text-xxl uppercase text-center md:text-left">{{ $caja['title'] }}</h3>
             <ul class="text-gris-800 pb-2 md:order-3 md:rounded-xl md:shadow md:p-6 md:w-7/12 md:flex md:flex-col md:justify-center lg:text-lg">
                 @foreach ($caja['desc'] as $item)
-                <li class="pb-3 text-center leading-normal"><span class="pr-3 hidden md:inline-block">-</span>{{ $item }}</li>
+                <li class="pb-1 text-center leading-normal flex justify-center md:justify-start">
+                    <span class="pr-3 hidden md:inline-block">-</span>
+                    <span class="text-center md:text-left">{{ $item }}</span>
+                </li>
                 @endforeach
             </ul>
             <img src="{{ $caja['image'] }}" alt="" class="w-full h-48 object-cover md:order-2 md:w-4/12 rounded-xl">
