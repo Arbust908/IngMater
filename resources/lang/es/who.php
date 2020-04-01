@@ -27,11 +27,11 @@ return [
         'title' => 'Nuestros clientes dicen:',
         'cards' => [
                 'logo' => '/img/gestampsa_logo.png',
-                'review' => 'Debido a la complejidad de los procesos industriales desarrollados por GESTAMP,  encontrar la solución a muchos de los problemas del día a día requiere un alto nivel de tecnicismo y conocimientos específicos. Por lo cual, tomamos la decisión de trabajar con INGMATER. En conjunto con ellos se analizó el proceso de estampado de chapa y se determinaron los ensayos a los cuales se iba a  someter a la materia prima para evaluar su aptitud.Holi 
+                'review' => 'Debido a la complejidad de los procesos industriales desarrollados por GESTAMP,  encontrar la solución a muchos de los problemas del día a día requiere un alto nivel de tecnicismo y conocimientos específicos. Por lo cual, tomamos la decisión de trabajar con INGMATER. En conjunto con ellos se analizó el proceso de estampado de chapa y se determinaron los ensayos a los cuales se iba a  someter a la materia prima para evaluar su aptitud.
                 <br>
                 A partir de estos resultados y su posterior análisis, INGMATER nos entregó un informe técnico haciendo foco en aquellos puntos que son relevantes para la obtención de piezas sanas, argumentando con bases teóricas sólidas sus observaciones.
                 ',
-                'author' => 'Tomas Bird Mosconi holi',
+                'author' => 'Tomas Bird Mosconi',
                 'job' => 'INGENIERÍA DE PROCESOS'
         ]
     ]
